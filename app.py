@@ -162,7 +162,7 @@ reference_card = html.Div([
 )
 
 resume_div = html.Div([
-    html.Iframe(src="https://gray-tabbie-22.tiiny.site",
+    html.Iframe(src="https://drive.google.com/file/d/1u90zM7WbGaVLAl6sdr3tnKaX-CUrVzIw/view",
                 width="1000", height="900")
     ],
     style={"paddingTop": 40}
