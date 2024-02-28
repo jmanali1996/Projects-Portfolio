@@ -23,7 +23,7 @@ card1 = dmc.Card(
                 dmc.Text("Wild Bird Fund Chatbot", weight=500, size='xl'),
                 html.A(
                     DashIconify(icon="ion:logo-github", width=30),
-                    href='https://github.com/jmanali1996/WBF.git',
+                    href='https://github.com/jmanali1996/WBF-Chatbot.git',
                     target="_blank"
                 )
             ],
@@ -60,7 +60,7 @@ card2 = dmc.Card(
                 dmc.Text("Multimorbidity Multistate Model", weight=500, size='xl'),
                 html.A(
                     DashIconify(icon="ion:logo-github", width=30),
-                    href='https://github.com/jmanali1996/multimorbidity_multistate_model.git',
+                    href='https://github.com/jmanali1996/Multimorbidity-Multistate-Model.git',
                     target="_blank"
                 )
             ],
