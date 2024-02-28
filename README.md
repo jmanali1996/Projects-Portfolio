@@ -5,3 +5,5 @@ I have compiled all my professional information and the projects I have worked o
 Have a look and connect!
 
 https://manali-jain-portfolio.onrender.com
+
+_*Currently it's under development_
