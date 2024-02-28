@@ -140,7 +140,7 @@ all_pjcards = [
 
 resume_div = html.Div([
     html.Iframe(src="https://drive.google.com/file/d/1u90zM7WbGaVLAl6sdr3tnKaX-CUrVzIw/preview",
-                width="1000", height="1400")
+                width="1000", height="1200")
     ],
     style={"paddingTop": 40}
 )
