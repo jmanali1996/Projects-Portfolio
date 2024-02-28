@@ -60,7 +60,7 @@ card2 = dmc.Card(
                 dmc.Text("Investment Portfolio", weight=500, size='xl'),
                 html.A(
                     DashIconify(icon="ion:logo-github", width=30),
-                    href='https://github.com/Coding-with-Adam/investing-app',
+                    href='https://github.com/jmanali1996/multimorbidity_multistate_model.git',
                     target="_blank"
                 )
             ],
@@ -80,42 +80,42 @@ card2 = dmc.Card(
     style={"width": 350},
 )
 
-card3 = dmc.Card(
-    children=[
-        dmc.CardSection(
-            dmc.Anchor(
-                dmc.Image(
-                    src="https://i.im.ge/2024/01/11/3xar3p.your-project-filler.png",
-                    alt="dash-app",
-                ),
-                href="https://charming-data.com/",
-                target="_blank"
-            ),
-        ),
-        dmc.Group(
-            [
-                dmc.Text("Your Project Title", weight=500, size='xl'),
-                html.A(
-                    DashIconify(icon="skill-icons:linkedin", width=30),
-                    href='https://www.linkedin.com/in/adam-schroeder-17b5a819/',
-                    target="_blank"
-                )
-            ],
-            position="apart",
-            mt="md",
-            mb="xs",
-        ),
-        dmc.Text(
-            "Your project description to share with the viewers of your portfolio.",
-            size="sm",
-            color="dimmed",
-        ),
-    ],
-    withBorder=True,
-    shadow="sm",
-    radius="md",
-    style={"width": 350},
-)
+#card3 = dmc.Card(
+#    children=[
+#        dmc.CardSection(
+#            dmc.Anchor(
+#                dmc.Image(
+#                    src="https://i.im.ge/2024/01/11/3xar3p.your-project-filler.png",
+#                    alt="dash-app",
+#                ),
+#                href="https://charming-data.com/",
+#                target="_blank"
+#            ),
+#        ),
+#        dmc.Group(
+#            [
+#                dmc.Text("Your Project Title", weight=500, size='xl'),
+#                html.A(
+#                    DashIconify(icon="skill-icons:linkedin", width=30),
+#                    href='https://www.linkedin.com/in/adam-schroeder-17b5a819/',
+#                    target="_blank"
+#                )
+#            ],
+#            position="apart",
+#            mt="md",
+#            mb="xs",
+#        ),
+#        dmc.Text(
+#            "Your project description to share with the viewers of your portfolio.",
+#            size="sm",
+#            color="dimmed",
+#        ),
+#    ],
+#    withBorder=True,
+#    shadow="sm",
+#    radius="md",
+#    style={"width": 350},
+#)
 
 all_cards = [
     dmc.Header(
@@ -132,8 +132,8 @@ all_cards = [
         ],
         children=[
             html.Div(card1),
-            html.Div(card2),
-            html.Div(card3),
+            html.Div(card2)
+            #html.Div(card3),
         ],
     )
 ]
