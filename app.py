@@ -48,7 +48,7 @@ card2 = dmc.Card(
         dmc.CardSection(
             dmc.Anchor(
                 dmc.Image(
-                    src="",
+                    src="mmm.png",
                     alt="dash-app",
                 ),
                 href="https://www.slideshare.net/slideshows/multimorbidity-multistate-model/265530051",
@@ -69,7 +69,7 @@ card2 = dmc.Card(
             mb="xs",
         ),
         dmc.Text(
-            "A multipage app that keeps track of one's investments.",
+            "The study focused on the development and validation of multi-state model to predict multimorbidity of cardiovascular disease, type 2 diabetes, and chronic kidney diseases..",
             size="sm",
             color="dimmed",
         ),
