@@ -11,7 +11,7 @@ card1 = dmc.Card(
         dmc.CardSection(
             dmc.Anchor(
                 dmc.Image(
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8HU076kd9IpC6tMSZU-2g-pO3j3yvCH4EsQ&s",
+                    src="https://i.pinimg.com/474x/9c/23/ff/9c23ff00145f0d59ec2c44ac0dc34473.jpg",
                     alt="Wild Bird Fund Chatbot",
                 ),
                 href="https://wbf-chatbot.onrender.com",
@@ -48,16 +48,16 @@ card2 = dmc.Card(
         dmc.CardSection(
             dmc.Anchor(
                 dmc.Image(
-                    src="https://i.im.ge/2024/01/11/3xI4b4.investment-app.png",
+                    src="",
                     alt="dash-app",
                 ),
-                href="https://investment-app.onrender.com/",
+                href="https://www.slideshare.net/slideshows/multimorbidity-multistate-model/265530051",
                 target="_blank"
             ),
         ),
         dmc.Group(
             [
-                dmc.Text("Investment Portfolio", weight=500, size='xl'),
+                dmc.Text("Multimorbidity Multistate Model", weight=500, size='xl'),
                 html.A(
                     DashIconify(icon="ion:logo-github", width=30),
                     href='https://github.com/jmanali1996/multimorbidity_multistate_model.git',
