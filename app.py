@@ -6,7 +6,7 @@ import dash_mantine_components as dmc
 from dash import Dash, html, dcc
 from dash_iconify import DashIconify
 
-card1 = dmc.Card(
+pjcard1 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Anchor(
@@ -43,7 +43,7 @@ card1 = dmc.Card(
     style={"width": 350},
 )
 
-card2 = dmc.Card(
+pjcard2 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Anchor(
@@ -117,7 +117,7 @@ card2 = dmc.Card(
 #    style={"width": 350},
 #)
 
-all_cards = [
+all_pjcards = [
     dmc.Header(
         height=80,
         children=[dmc.Text("Data Analysis and AI Projects",
@@ -131,43 +131,126 @@ all_cards = [
             {"maxWidth": 950, "cols": 1, "spacing": "sm"},
         ],
         children=[
-            html.Div(card1),
-            html.Div(card2)
+            html.Div(pjcard1),
+            html.Div(pjcard2)
             #html.Div(card3),
         ],
     )
 ]
 
-reference_card = html.Div([
-    dmc.Card(
-        children=[
-            dmc.Text("Marge Simpson", weight=500, size='xl'),
-            dmc.Text(
-                "Pretzel business Owner",
-                size="md",
-                mb="xs",
-            ),
-            dmc.Text(
-                "when a man's biggest dreams include seconds on dessert, occasional snuggling and sleeping in til noon on weekends, no one man can destroy them.",
-                size="sm",
-                color="dimmed",
-            ),
-        ],
-        withBorder=True,
-        shadow="sm",
-        radius="md",
-        style={"width": 350})
-    ],
-    style={"paddingTop": 40}
-)
-
 resume_div = html.Div([
-    html.Iframe(src="https://drive.google.com/file/d/1u90zM7WbGaVLAl6sdr3tnKaX-CUrVzIw/view",
+    html.Iframe(src="https://drive.google.com/file/d/1u90zM7WbGaVLAl6sdr3tnKaX-CUrVzIw/preview",
                 width="1000", height="900")
     ],
     style={"paddingTop": 40}
 )
 
+refcard1 = dmc.Card(
+    children=[
+        dmc.CardSection(
+            dmc.Anchor(
+                dmc.Image(
+                    src="https://www.f6s.com/content-resource/profiles/2595505_original.jpg",
+                    alt="Chistats Labs Pvt. Ltd.",
+                ),
+                href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview",
+                target="_blank"
+            ),
+        ),
+        dmc.Group(
+            [
+                dmc.Text("Dr. Yogesh Karpate", weight=500, size='xl')
+            ],
+            position="apart",
+            mt="md",
+            mb="xs",
+        ),
+        dmc.Text(
+            "Founder/Chief Technology Officer",
+            size="sm",
+            color="dimmed",
+        ),
+    ],
+    withBorder=True,
+    shadow="sm",
+    radius="md",
+    style={"width": 350},
+)
+
+refcard2 = dmc.Card(
+    children=[
+        dmc.CardSection(
+            dmc.Anchor(
+                dmc.Image(
+                    src="https://hotmuggs.com/cdn/shop/files/Hotmuggs_logo_hd_black_transparent_3_1693x.png?v=1667378147",
+                    alt="Hot Stuffs Pvt. Ltd.",
+                ),
+                href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview",
+                target="_blank"
+            ),
+        ),
+        dmc.Group(
+            [
+                dmc.Text("Mr. Rishi Jain", weight=500, size='xl')
+            ],
+            position="apart",
+            mt="md",
+            mb="xs",
+        ),
+        dmc.Text(
+            "Chief Marketing Officer",
+            size="sm",
+            color="dimmed",
+        ),
+    ],
+    withBorder=True,
+    shadow="sm",
+    radius="md",
+    style={"width": 350},
+)
+
+#reference_card = html.Div([
+#    dmc.Card(
+#        children=[
+#            dmc.Text("Marge Simpson", weight=500, size='xl'),
+#            dmc.Text(
+#                "Pretzel business Owner",
+#                size="md",
+#                mb="xs",
+#            ),
+#            dmc.Text(
+#                "when a man's biggest dreams include seconds on dessert, occasional snuggling and sleeping in til noon on weekends, no one man can destroy them.",
+#                size="sm",
+#                color="dimmed",
+#            ),
+#        ],
+#        withBorder=True,
+#        shadow="sm",
+#        radius="md",
+#        style={"width": 350})
+#    ],
+#    style={"paddingTop": 40}
+#)
+
+all_refcards = [
+    dmc.Header(
+        height=80,
+        children=[dmc.Text("Former employers' reference letters",
+                           style={"fontSize": 40})],
+    ),
+    dmc.SimpleGrid(
+        cols=3,
+        spacing="lg",
+        breakpoints=[
+            {"maxWidth": 1240, "cols": 2, "spacing": "md"},
+            {"maxWidth": 950, "cols": 1, "spacing": "sm"},
+        ],
+        children=[
+            html.Div(refcard1),
+            html.Div(refcard2)
+        ],
+    )
+]
 
 app = Dash()
 server = app.server
@@ -184,9 +267,9 @@ app.layout = dmc.MantineProvider(
                     dmc.Tab("References", value="references"),
                 ], style={"paddingRight": 50, "paddingTop": 15}
             ),
-            dmc.TabsPanel(children=all_cards, value="projects", pb="xs"),
+            dmc.TabsPanel(children=all_pjcards, value="projects", pb="xs"),
             dmc.TabsPanel(resume_div, value="resume", pb="xs"),
-            dmc.TabsPanel(reference_card, value="references", pb="xs"),
+            dmc.TabsPanel(children=all_refcards, value="references", pb="xs"),
         ],
         value="projects",
         orientation='vertical',
