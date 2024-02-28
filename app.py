@@ -11,7 +11,7 @@ card1 = dmc.Card(
         dmc.CardSection(
             dmc.Anchor(
                 dmc.Image(
-                    src="https://i.pinimg.com/474x/9c/23/ff/9c23ff00145f0d59ec2c44ac0dc34473.jpg",
+                    src="https://i.postimg.cc/gkX18svb/chatbot.jpg",
                     alt="Wild Bird Fund Chatbot",
                 ),
                 href="https://wbf-chatbot.onrender.com",
@@ -48,8 +48,8 @@ card2 = dmc.Card(
         dmc.CardSection(
             dmc.Anchor(
                 dmc.Image(
-                    src="mmm.png",
-                    alt="dash-app",
+                    src="https://i.postimg.cc/CL3VdXnq/mmm.png",
+                    alt="Multimorbidity Multistate Model",
                 ),
                 href="https://www.slideshare.net/slideshows/multimorbidity-multistate-model/265530051",
                 target="_blank"
@@ -69,7 +69,7 @@ card2 = dmc.Card(
             mb="xs",
         ),
         dmc.Text(
-            "The study focused on the development and validation of multi-state model to predict multimorbidity of cardiovascular disease, type 2 diabetes, and chronic kidney diseases..",
+            "The study focused developing and validating a multi-state model to predict multimorbidity of cardiovascular disease, type 2 diabetes, and chronic kidney diseases..",
             size="sm",
             color="dimmed",
         ),
