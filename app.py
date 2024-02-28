@@ -162,8 +162,8 @@ reference_card = html.Div([
 )
 
 resume_div = html.Div([
-    html.Iframe(src="https://docs.google.com/document/d/e/2PACX-1vRtDGwIh5PTOrG5kcPUavvzX6MtkiM4qpFl762-TcoW6zQgUVqOlJUhmB0PfzeDDA/pub",
-                width="800", height="480")
+    html.Iframe(src="https://drive.google.com/file/d/1u90zM7WbGaVLAl6sdr3tnKaX-CUrVzIw/view?usp=sharing",
+                width="1000", height="900")
     ],
     style={"paddingTop": 40}
 )
