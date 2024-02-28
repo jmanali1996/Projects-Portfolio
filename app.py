@@ -69,7 +69,7 @@ card2 = dmc.Card(
             mb="xs",
         ),
         dmc.Text(
-            "The study focused developing and validating a multi-state model to predict multimorbidity of cardiovascular disease, type 2 diabetes, and chronic kidney diseases..",
+            "The study focused on developing and validating a multi-state model to predict multimorbidity of cardiovascular disease, type 2 diabetes, and chronic kidney diseases.",
             size="sm",
             color="dimmed",
         ),
@@ -162,7 +162,7 @@ reference_card = html.Div([
 )
 
 resume_div = html.Div([
-    html.Iframe(src="https://drive.google.com/file/d/1u90zM7WbGaVLAl6sdr3tnKaX-CUrVzIw/view?usp=sharing",
+    html.Iframe(src="https://gray-tabbie-22.tiiny.site",
                 width="1000", height="900")
     ],
     style={"paddingTop": 40}
