@@ -140,7 +140,7 @@ all_pjcards = [
 
 resume_div = html.Div([
     html.Iframe(src="https://drive.google.com/file/d/1u90zM7WbGaVLAl6sdr3tnKaX-CUrVzIw/preview",
-                width="1000", height="900")
+                width="1000", height="1400")
     ],
     style={"paddingTop": 40}
 )
@@ -182,7 +182,7 @@ refcard2 = dmc.Card(
         dmc.CardSection(
             dmc.Anchor(
                 dmc.Image(
-                    src="https://hotmuggs.com/cdn/shop/files/Hotmuggs_logo_hd_black_transparent_3_1693x.png?v=1667378147",
+                    src="https://hotmuggs.com/cdn/shop/files/Hot_Muggs_3D_Wall_Gold_Logo.jpg?v=1641220143",
                     alt="Hot Stuffs Pvt. Ltd.",
                 ),
                 href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview",
