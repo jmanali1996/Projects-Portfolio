@@ -9,7 +9,7 @@ from dash_iconify import DashIconify
 
 intro_div = html.Div([
     html.Iframe(src="https://i.postimg.cc/hvXX5kRm/IMG-20230921-WA0002.jpg",
-                width="1200", height="700")
+                width="1250", height="700")
     ],
     style={"paddingTop": 40}                
 )
@@ -47,7 +47,14 @@ pjcard1 = dmc.Card(
             mb="xs",
         ),
         dmc.Text(
-            "A chatbot built for the Wildbirdfund Nyc that can help save the lives of thousands of birds annually and can be used to reduce bird-glass collisions and offer help to injured birds.",
+            "A chatbot built for the Wildbirdfund Nyc that can help save the lives of thousands of birds annually and can be used to" 
+            "reduce bird-glass collisions and offer help to injured birds.",
+            size="sm",
+            color="dimmed",
+        ),
+        html.Br(),
+        dmc.Text(
+            "The app uses a free server and advanced AI integrations so the loading time will be up to 1 min.",
             size="sm",
             color="dimmed",
         ),
@@ -84,7 +91,8 @@ pjcard2 = dmc.Card(
             mb="xs",
         ),
         dmc.Text(
-            "The study focused on developing and validating a multi-state model to predict multimorbidity of cardiovascular disease, type 2 diabetes, and chronic kidney diseases.",
+            "My research focused on developing and validating a multi-state model to predict multimorbidity of cardiovascular disease," 
+            "type 2 diabetes, and chronic kidney diseases.",
             size="sm",
             color="dimmed",
         ),
@@ -153,100 +161,98 @@ all_pjcards = [
     )
 ]
 
-cs_field = "https://www.f6s.com/content-resource/profiles/2595505_original.jpg"
-refcard1 = dbc.Card(
-    [
-        dbc.CardImg(src=cs_field),
-        dbc.CardImgOverlay([
-            html.H2("Dr. Yogesh Karpate"),
-            html.H3("Founder/Chief Technology Officer"),
-            dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview", target="_blank"),
-        ])
-
-    ],
-    style={"maxWidth": 500},
-    className="my-4 text-center text-black"
-)
-
-hm_field = "https://hotmuggs.com/cdn/shop/files/Hot_Muggs_3D_Wall_Gold_Logo.jpg?v=1641220143"
-refcard2 = dbc.Card(
-    [
-        dbc.CardImg(src=hm_field),
-        dbc.CardImgOverlay([
-            html.H2("Mr. Rishi Jain"),
-            html.H3("Chief Marketing Officer"),
-            dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview", target="_blank"),
-        ])
-
-    ],
-    style={"maxWidth": 500},
-    className="my-4 text-center text-black"
-)
-
-
-#refcard1 = dmc.Card(
-#    children=[
-#        dmc.CardSection(
-#            dmc.Anchor(
-#                dmc.Image(
-#                    src="https://www.f6s.com/content-resource/profiles/2595505_original.jpg",
-#                    alt="Chistats Labs Pvt. Ltd.",
-#                ),
-#                href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview",
-#                target="_blank"
-#            ),
-#        ),
-#        dmc.Group(
-#            [
-#                dmc.Text("Dr. Yogesh Karpate", weight=500, size='xl')
-#            ],
-#            position="apart",
-#            mt="md",
-#            mb="xs",
-#        ),
-#        dmc.Text(
-#            "Founder/Chief Technology Officer",
-#            size="sm",
-#            color="dimmed",
-#        ),
+#cs_field = "https://www.f6s.com/content-resource/profiles/2595505_original.jpg"
+#refcard1 = dbc.Card(
+#    [
+#        dbc.CardImg(src=cs_field),
+#        dbc.CardImgOverlay([
+#            html.H2("Dr. Yogesh Karpate"),
+#            html.H3("Founder/Chief Technology Officer"),
+#            dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview", target="_blank"),
+#        ])
 #    ],
-#    withBorder=True,
-#    shadow="sm",
-#    radius="md",
-#    style={"width": 350},
+#    style={"maxWidth": 500},
+#    className="my-4 text-center text-black"
 #)
 
-#refcard2 = dmc.Card(
-#    children=[
-#        dmc.CardSection(
-#            dmc.Anchor(
-#                dmc.Image(
-#                    src="https://hotmuggs.com/cdn/shop/files/Hot_Muggs_3D_Wall_Gold_Logo.jpg?v=1641220143",
-#                    alt="Hot Stuffs Pvt. Ltd.",
-#                ),
-#                href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview",
-#                target="_blank"
-#            ),
-#        ),
-#        dmc.Group(
-#            [
-#                dmc.Text("Mr. Rishi Jain", weight=500, size='xl')
-#            ],
-#            position="apart",
-#            mt="md",
-#            mb="xs",
-#        ),
-#        dmc.Text(
-#            "Chief Marketing Officer",
-#            size="sm",
-#            color="dimmed",
-#        ),
+#hm_field = "https://hotmuggs.com/cdn/shop/files/Hot_Muggs_3D_Wall_Gold_Logo.jpg?v=1641220143"
+#refcard2 = dbc.Card(
+#    [
+#        dbc.CardImg(src=hm_field),
+#        dbc.CardImgOverlay([
+#            html.H2("Mr. Rishi Jain"),
+#            html.H3("Chief Marketing Officer"),
+#            dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview", target="_blank"),
+#        ])
 #    ],
-#    withBorder=True,
-#    shadow="sm",
-#    radius="md",
-#    style={"width": 350},
+#    style={"maxWidth": 500},
+#    className="my-4 text-center text-black"
 #)
+
+
+refcard1 = dmc.Card(
+    children=[
+        dmc.CardSection(
+            dmc.Anchor(
+                dmc.Image(
+                    src="https://www.f6s.com/content-resource/profiles/2595505_original.jpg",
+                    alt="Chistats Labs Pvt. Ltd.",
+                ),
+            ),
+        ),
+        dmc.Group(
+            [
+                dmc.Text("Dr. Yogesh Karpate", weight=500, size='xl')
+            ],
+            position="apart",
+            mt="md",
+            mb="xs",
+        ),
+        dmc.Text(
+            "Founder/Chief Technology Officer",
+            size="sm",
+            color="dimmed",
+        ),
+        dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview", 
+                   target="_blank")
+    ],
+    withBorder=True,
+    shadow="sm",
+    radius="md",
+    style={"width": 350},
+)
+
+refcard2 = dmc.Card(
+    children=[
+        dmc.CardSection(
+            dmc.Anchor(
+                dmc.Image(
+                    src="https://hotmuggs.com/cdn/shop/files/Hot_Muggs_3D_Wall_Gold_Logo.jpg?v=1641220143",
+                    alt="Hot Stuffs Pvt. Ltd.",
+                ),
+            ),
+        ),
+        dmc.Group(
+            [
+                dmc.Text("Mr. Rishi Jain", weight=500, size='xl')
+            ],
+            position="apart",
+            mt="md",
+            mb="xs",
+        ),
+        dmc.Text(
+            "Chief Marketing Officer",
+            size="sm",
+            color="dimmed",
+        ),
+        dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview", 
+                   target="_blank")
+    ],
+    withBorder=True,
+    shadow="sm",
+    radius="md",
+    style={"width": 350},
+)
 
 #reference_card = html.Div([
 #    dmc.Card(
