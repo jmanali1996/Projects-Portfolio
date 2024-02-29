@@ -5,3 +5,5 @@ I have compiled all my professional information and the projects I have worked o
 Have a look and connect!
 
 https://manali-jain-portfolio.onrender.com
+
+_*The site will be in a continuous development process and as it uses a free server and advanced AI integrations, the loading time will take upto 1 min._
