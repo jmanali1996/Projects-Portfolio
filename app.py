@@ -8,7 +8,7 @@ from dash import Dash, html, dcc
 from dash_iconify import DashIconify
 
 intro_div = html.Div([
-    html.Image(src="https://i.im.ge/2024/02/29/gGL951.intro-pic.jpg", 
+    dmc.Image(src="https://i.im.ge/2024/02/29/gGL951.intro-pic.jpg", 
                 width="720", height="405")
     ],
     style={"paddingTop": 40}                
