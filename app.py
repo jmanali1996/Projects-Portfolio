@@ -8,7 +8,25 @@ from dash import Dash, html, dcc
 from dash_iconify import DashIconify
 
 intro_div = html.Div([
-    dmc.Image(src="https://i.postimg.cc/FsPhxcTm/intro-pic.jpg")
+    dmc.Image(src="https://i.postimg.cc/FsPhxcTm/intro-pic.jpg"),
+    html.Br(),
+    dmc.Text(
+        "Greetings! I'm Manali Jain, hailing from the vibrant city of Mumbai, Maharashtra, India. My academic journey "
+        "led me through the realms of Psychology for my graduation, followed by a deep dive into the field of Health "
+        "Data Science for my master's degree. With a professional trajectory spanning over three years, I've donned "
+        "various hats, serving as a Business Data Analyst, Data Engineer, and Student Researcher.",
+    size="sm",
+    color="dimmed",
+    ),
+    html.Br(),
+    dmc.Text(
+        "My passion lies in leveraging data science and analytics to catalyze transformative discoveries that resonate with "
+        "the betterment of humanity. Beyond the world of data, I find solace and creativity in the art of crocheting. Much "
+        "like life itself, crocheting starts as a jumble of yarn, but with patience and skill, transforms into a masterpiece. "
+        "Indeed, life and work are akin to crafting intricate pieces of art, each with its unique beauty waiting to be unveiled.",
+    size="sm",
+    color="dimmed",
+    ),
     ],
     style={"paddingTop": 40}                
 )
@@ -46,7 +64,7 @@ pjcard1 = dmc.Card(
             mb="xs",
         ),
         dmc.Text(
-            "A chatbot built for the Wildbirdfund Nyc that can help save the lives of thousands of birds annually and can be used to" 
+            "A chatbot built for the Wildbirdfund Nyc that can help save the lives of thousands of birds annually and can be used to " 
             "reduce bird-glass collisions and offer help to injured birds.",
             size="sm",
             color="dimmed",
@@ -90,7 +108,7 @@ pjcard2 = dmc.Card(
             mb="xs",
         ),
         dmc.Text(
-            "My research focused on developing and validating a multi-state model to predict multimorbidity of cardiovascular disease," 
+            "My research focused on developing and validating a multi-state model to predict multimorbidity of cardiovascular disease, " 
             "type 2 diabetes, and chronic kidney diseases.",
             size="sm",
             color="dimmed",
