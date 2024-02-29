@@ -196,7 +196,7 @@ refcard1 = dmc.Card(
             dmc.Anchor(
                 dmc.Image(
                     src="https://www.f6s.com/content-resource/profiles/2595505_original.jpg",
-                    alt="Chistats Labs Pvt. Ltd.",
+                    alt="Chistats Labs Pvt. Ltd."
                 ),
             ),
         ),
@@ -228,7 +228,7 @@ refcard2 = dmc.Card(
             dmc.Anchor(
                 dmc.Image(
                     src="https://hotmuggs.com/cdn/shop/files/Hot_Muggs_3D_Wall_Gold_Logo.jpg?v=1641220143",
-                    alt="Hot Stuffs Pvt. Ltd.",
+                    alt="Hot Stuffs Pvt. Ltd."
                 ),
             ),
         ),
