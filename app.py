@@ -9,7 +9,7 @@ from dash_iconify import DashIconify
 
 intro_div = html.Div([
     html.Iframe(src="https://i.postimg.cc/hvXX5kRm/IMG-20230921-WA0002.jpg",
-                width="1400", height="700")
+                width="1200", height="700")
     ],
     style={"paddingTop": 40}                
 )
@@ -160,7 +160,7 @@ refcard1 = dbc.Card(
         dbc.CardImgOverlay([
             html.H2("Dr. Yogesh Karpate"),
             html.H3("Founder/Chief Technology Officer"),
-            dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview"),
+            dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview", target="_blank"),
         ])
 
     ],
@@ -171,11 +171,11 @@ refcard1 = dbc.Card(
 hm_field = "https://hotmuggs.com/cdn/shop/files/Hot_Muggs_3D_Wall_Gold_Logo.jpg?v=1641220143"
 refcard2 = dbc.Card(
     [
-        dbc.CardImg(src=cs_field),
+        dbc.CardImg(src=hm_field),
         dbc.CardImgOverlay([
             html.H2("Mr. Rishi Jain"),
             html.H3("Chief Marketing Officer"),
-            dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview"),
+            dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview", target="_blank"),
         ])
 
     ],
@@ -312,7 +312,7 @@ app.layout = dmc.MantineProvider(
             dmc.TabsPanel(children=all_pjcards, value="projects", pb="xs"),
             dmc.TabsPanel(children=all_refcards, value="references", pb="xs"),
         ],
-        value="projects",
+        value="introduction",
         orientation='vertical',
         variant='pills',
     )
