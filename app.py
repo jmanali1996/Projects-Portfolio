@@ -8,7 +8,7 @@ from dash import Dash, html, dcc
 from dash_iconify import DashIconify
 
 intro_div = html.Div([
-    html.Iframe(src="https://i.postimg.cc/W3LnWNJB/intro-pic.jpg",
+    html.Image(src="https://i.im.ge/2024/02/29/gGL951.intro-pic.jpg", 
                 width="720", height="405")
     ],
     style={"paddingTop": 40}                
@@ -26,7 +26,7 @@ pjcard1 = dmc.Card(
         dmc.CardSection(
             dmc.Anchor(
                 dmc.Image(
-                    src="https://i.postimg.cc/GpZqwSFW/chatbot.jpg",
+                    src="https://i.im.ge/2024/02/29/gGL5rP.chatbot.jpg",
                     alt="Wild Bird Fund Chatbot",
                 ),
                 href="https://wbf-chatbot.onrender.com",
