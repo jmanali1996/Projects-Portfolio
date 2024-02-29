@@ -3,8 +3,23 @@
 # await micropip.install('dash-mantine-components')
 # await micropip.install('dash-iconify')
 import dash_mantine_components as dmc
+import dash_bootstrap_components as dbc
 from dash import Dash, html, dcc
 from dash_iconify import DashIconify
+
+intro_div = html.Div([
+    html.Iframe(src="https://i.postimg.cc/hvXX5kRm/IMG-20230921-WA0002.jpg",
+                width="1400", height="700")
+    ],
+    style={"paddingTop": 40}                
+)
+
+resume_div = html.Div([
+    html.Iframe(src="https://drive.google.com/file/d/1u90zM7WbGaVLAl6sdr3tnKaX-CUrVzIw/preview",
+                width="1000", height="1200")
+    ],
+    style={"paddingTop": 40}
+)
 
 pjcard1 = dmc.Card(
     children=[
@@ -138,76 +153,100 @@ all_pjcards = [
     )
 ]
 
-resume_div = html.Div([
-    html.Iframe(src="https://drive.google.com/file/d/1u90zM7WbGaVLAl6sdr3tnKaX-CUrVzIw/preview",
-                width="1000", height="1200")
+cs_field = "https://www.f6s.com/content-resource/profiles/2595505_original.jpg"
+refcard1 = dbc.Card(
+    [
+        dbc.CardImg(src=cs_field),
+        dbc.CardImgOverlay([
+            html.H2("Dr. Yogesh Karpate"),
+            html.H3("Founder/Chief Technology Officer"),
+            dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview"),
+        ])
+
     ],
-    style={"paddingTop": 40}
+    style={"maxWidth": 500},
+    className="my-4 text-center text-black"
 )
 
-refcard1 = dmc.Card(
-    children=[
-        dmc.CardSection(
-            dmc.Anchor(
-                dmc.Image(
-                    src="https://www.f6s.com/content-resource/profiles/2595505_original.jpg",
-                    alt="Chistats Labs Pvt. Ltd.",
-                ),
-                href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview",
-                target="_blank"
-            ),
-        ),
-        dmc.Group(
-            [
-                dmc.Text("Dr. Yogesh Karpate", weight=500, size='xl')
-            ],
-            position="apart",
-            mt="md",
-            mb="xs",
-        ),
-        dmc.Text(
-            "Founder/Chief Technology Officer",
-            size="sm",
-            color="dimmed",
-        ),
+hm_field = "https://hotmuggs.com/cdn/shop/files/Hot_Muggs_3D_Wall_Gold_Logo.jpg?v=1641220143"
+refcard2 = dbc.Card(
+    [
+        dbc.CardImg(src=cs_field),
+        dbc.CardImgOverlay([
+            html.H2("Mr. Rishi Jain"),
+            html.H3("Chief Marketing Officer"),
+            dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview"),
+        ])
+
     ],
-    withBorder=True,
-    shadow="sm",
-    radius="md",
-    style={"width": 350},
+    style={"maxWidth": 500},
+    className="my-4 text-center text-black"
 )
 
-refcard2 = dmc.Card(
-    children=[
-        dmc.CardSection(
-            dmc.Anchor(
-                dmc.Image(
-                    src="https://hotmuggs.com/cdn/shop/files/Hot_Muggs_3D_Wall_Gold_Logo.jpg?v=1641220143",
-                    alt="Hot Stuffs Pvt. Ltd.",
-                ),
-                href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview",
-                target="_blank"
-            ),
-        ),
-        dmc.Group(
-            [
-                dmc.Text("Mr. Rishi Jain", weight=500, size='xl')
-            ],
-            position="apart",
-            mt="md",
-            mb="xs",
-        ),
-        dmc.Text(
-            "Chief Marketing Officer",
-            size="sm",
-            color="dimmed",
-        ),
-    ],
-    withBorder=True,
-    shadow="sm",
-    radius="md",
-    style={"width": 350},
-)
+
+#refcard1 = dmc.Card(
+#    children=[
+#        dmc.CardSection(
+#            dmc.Anchor(
+#                dmc.Image(
+#                    src="https://www.f6s.com/content-resource/profiles/2595505_original.jpg",
+#                    alt="Chistats Labs Pvt. Ltd.",
+#                ),
+#                href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview",
+#                target="_blank"
+#            ),
+#        ),
+#        dmc.Group(
+#            [
+#                dmc.Text("Dr. Yogesh Karpate", weight=500, size='xl')
+#            ],
+#            position="apart",
+#            mt="md",
+#            mb="xs",
+#        ),
+#        dmc.Text(
+#            "Founder/Chief Technology Officer",
+#            size="sm",
+#            color="dimmed",
+#        ),
+#    ],
+#    withBorder=True,
+#    shadow="sm",
+#    radius="md",
+#    style={"width": 350},
+#)
+
+#refcard2 = dmc.Card(
+#    children=[
+#        dmc.CardSection(
+#            dmc.Anchor(
+#                dmc.Image(
+#                    src="https://hotmuggs.com/cdn/shop/files/Hot_Muggs_3D_Wall_Gold_Logo.jpg?v=1641220143",
+#                    alt="Hot Stuffs Pvt. Ltd.",
+#                ),
+#                href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview",
+#                target="_blank"
+#            ),
+#        ),
+#        dmc.Group(
+#            [
+#                dmc.Text("Mr. Rishi Jain", weight=500, size='xl')
+#            ],
+#            position="apart",
+#            mt="md",
+#            mb="xs",
+#        ),
+#        dmc.Text(
+#            "Chief Marketing Officer",
+#            size="sm",
+#            color="dimmed",
+#        ),
+#    ],
+#    withBorder=True,
+#    shadow="sm",
+#    radius="md",
+#    style={"width": 350},
+#)
 
 #reference_card = html.Div([
 #    dmc.Card(
@@ -252,7 +291,7 @@ all_refcards = [
     )
 ]
 
-app = Dash()
+app = Dash(__name__, external_stylesheets=[dbc.themes.SPACELAB, dbc.icons.BOOTSTRAP])
 server = app.server
 app.layout = dmc.MantineProvider(
     theme={"colorScheme": "dark"},
@@ -262,13 +301,15 @@ app.layout = dmc.MantineProvider(
         [
             dmc.TabsList(
                 [
-                    dmc.Tab("Projects", value="projects"),
+                    dmc.Tab("Introduction", value="introduction"),
                     dmc.Tab("Resumé", value="resume"),
+                    dmc.Tab("Projects", value="projects"),
                     dmc.Tab("References", value="references"),
                 ], style={"paddingRight": 50, "paddingTop": 15}
             ),
-            dmc.TabsPanel(children=all_pjcards, value="projects", pb="xs"),
+            dmc.TabsPanel(intro_div, value="introduction", pb="xs"),
             dmc.TabsPanel(resume_div, value="resume", pb="xs"),
+            dmc.TabsPanel(children=all_pjcards, value="projects", pb="xs"),
             dmc.TabsPanel(children=all_refcards, value="references", pb="xs"),
         ],
         value="projects",
