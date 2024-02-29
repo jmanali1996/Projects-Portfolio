@@ -26,7 +26,7 @@ pjcard1 = dmc.Card(
         dmc.CardSection(
             dmc.Anchor(
                 dmc.Image(
-                    src="https://im.ge/i/gGL5rP",
+                    src="https://i.postimg.cc/qvRkYh2x/chatbot.jpg",
                     alt="Wild Bird Fund Chatbot",
                 ),
                 href="https://wbf-chatbot.onrender.com",
@@ -70,7 +70,7 @@ pjcard2 = dmc.Card(
         dmc.CardSection(
             dmc.Anchor(
                 dmc.Image(
-                    src="https://i.postimg.cc/hvrGR6dM/mmm.png",
+                    src="https://i.postimg.cc/SKCBhGbv/mmm.png",
                     alt="Multimorbidity Multistate Model",
                 ),
                 href="https://www.slideshare.net/slideshows/multimorbidity-multistate-model/265530051",
