@@ -74,11 +74,11 @@ pjcard1 = dmc.Card(
             size="sm",
             color="dimmed",
         ),
-        html.Br(),
         dmc.Text(
             "The app uses a free server and advanced AI integrations so the loading time will be up to 1 min.",
             size="sm",
             color="dimmed",
+            italic=True,
         ),
     ],
     withBorder=True,
