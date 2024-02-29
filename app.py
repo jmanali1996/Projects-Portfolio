@@ -18,12 +18,17 @@ intro_div = html.Div([
     size="sm",
     color="dimmed",
     ),
-    html.Br(),
     dmc.Text(
         "My passion lies in leveraging data science and analytics to catalyze transformative discoveries that resonate with "
         "the betterment of humanity. Beyond the world of data, I find solace and creativity in the art of crocheting. Much "
         "like life itself, crocheting starts as a jumble of yarn, but with patience and skill, transforms into a masterpiece. "
         "Indeed, life and work are akin to crafting intricate pieces of art, each with its unique beauty waiting to be unveiled.",
+    size="sm",
+    color="dimmed",
+    ),
+    dmc.Text(
+        "Feel free to peruse my resume, explore the diverse projects I've undertaken, and review reference letters from colleagues. "
+        "If you'd like to get in touch, drop me a mail at jmanali1996@gmail.com.",
     size="sm",
     color="dimmed",
     ),
