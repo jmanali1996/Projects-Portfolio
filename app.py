@@ -8,8 +8,8 @@ from dash import Dash, html, dcc
 from dash_iconify import DashIconify
 
 intro_div = html.Div([
-    html.Iframe(src="https://i.postimg.cc/hvXX5kRm/IMG-20230921-WA0002.jpg",
-                width="1250", height="700")
+    html.Iframe(src="https://i.postimg.cc/W3LnWNJB/intro-pic.jpg",
+                width="720", height="405")
     ],
     style={"paddingTop": 40}                
 )
@@ -26,7 +26,7 @@ pjcard1 = dmc.Card(
         dmc.CardSection(
             dmc.Anchor(
                 dmc.Image(
-                    src="https://i.postimg.cc/gkX18svb/chatbot.jpg",
+                    src="https://i.postimg.cc/GpZqwSFW/chatbot.jpg",
                     alt="Wild Bird Fund Chatbot",
                 ),
                 href="https://wbf-chatbot.onrender.com",
@@ -70,7 +70,7 @@ pjcard2 = dmc.Card(
         dmc.CardSection(
             dmc.Anchor(
                 dmc.Image(
-                    src="https://i.postimg.cc/CL3VdXnq/mmm.png",
+                    src="https://i.postimg.cc/hvrGR6dM/mmm.png",
                     alt="Multimorbidity Multistate Model",
                 ),
                 href="https://www.slideshare.net/slideshows/multimorbidity-multistate-model/265530051",
@@ -194,7 +194,7 @@ refcard1 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Image(
-                src="https://www.f6s.com/content-resource/profiles/2595505_original.jpg",
+                src="https://i.postimg.cc/BZDwsDnr/Chistats.png",
                 alt="Chistats Labs Pvt. Ltd."
             ),
         ),
@@ -211,7 +211,8 @@ refcard1 = dmc.Card(
             size="sm",
             color="dimmed",
         ),
-        dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview", 
+        html.Br(),
+        dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview", 
                    target="_blank")
     ],
     withBorder=True,
@@ -224,7 +225,7 @@ refcard2 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Image(
-                src="https://hotmuggs.com/cdn/shop/files/Hot_Muggs_3D_Wall_Gold_Logo.jpg?v=1641220143",
+                src="https://i.postimg.cc/tRNvYxL8/Hotmuggs.png",
                 alt="Hot Stuffs Pvt. Ltd."
             ),
         ),
@@ -241,6 +242,7 @@ refcard2 = dmc.Card(
             size="sm",
             color="dimmed",
         ),
+        html.Br(),
         dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview", 
                    target="_blank")
     ],
