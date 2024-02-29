@@ -6,4 +6,4 @@ Have a look and connect!
 
 https://manali-jain-portfolio.onrender.com
 
-_*The site will be in a continuous development process and as it uses a free server and advanced AI integrations, the loading time will take upto 1 min._
+_*The site will be in a continuous development process and as it uses a free server and advanced AI integrations, the loading time will be up to 1 min._
