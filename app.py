@@ -193,11 +193,9 @@ all_pjcards = [
 refcard1 = dmc.Card(
     children=[
         dmc.CardSection(
-            dmc.Anchor(
-                dmc.Image(
-                    src="https://www.f6s.com/content-resource/profiles/2595505_original.jpg",
-                    alt="Chistats Labs Pvt. Ltd."
-                ),
+            dmc.Image(
+                src="https://www.f6s.com/content-resource/profiles/2595505_original.jpg",
+                alt="Chistats Labs Pvt. Ltd."
             ),
         ),
         dmc.Group(
@@ -225,11 +223,9 @@ refcard1 = dmc.Card(
 refcard2 = dmc.Card(
     children=[
         dmc.CardSection(
-            dmc.Anchor(
-                dmc.Image(
-                    src="https://hotmuggs.com/cdn/shop/files/Hot_Muggs_3D_Wall_Gold_Logo.jpg?v=1641220143",
-                    alt="Hot Stuffs Pvt. Ltd."
-                ),
+            dmc.Image(
+                src="https://hotmuggs.com/cdn/shop/files/Hot_Muggs_3D_Wall_Gold_Logo.jpg?v=1641220143",
+                alt="Hot Stuffs Pvt. Ltd."
             ),
         ),
         dmc.Group(
