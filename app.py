@@ -8,8 +8,7 @@ from dash import Dash, html, dcc
 from dash_iconify import DashIconify
 
 intro_div = html.Div([
-    dmc.Image(src="https://im.ge/i/gGL951", 
-                width="720", height="405")
+    dmc.Image(src="https://i.postimg.cc/FsPhxcTm/intro-pic.jpg")
     ],
     style={"paddingTop": 40}                
 )
@@ -194,7 +193,7 @@ refcard1 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Image(
-                src="https://i.postimg.cc/BZDwsDnr/Chistats.png",
+                src="https://i.postimg.cc/XJLR7kCP/Chistats.png",
                 alt="Chistats Labs Pvt. Ltd."
             ),
         ),
@@ -225,7 +224,7 @@ refcard2 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Image(
-                src="https://i.postimg.cc/tRNvYxL8/Hotmuggs.png",
+                src="https://i.postimg.cc/L8swN1Gk/Hotmuggs.png",
                 alt="Hot Stuffs Pvt. Ltd."
             ),
         ),
