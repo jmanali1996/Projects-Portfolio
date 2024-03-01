@@ -7,8 +7,12 @@ import dash_bootstrap_components as dbc
 from dash import Dash, html, dcc
 from dash_iconify import DashIconify
 
+wlc_div = html.Div([
+    dmc.Image(src="https://i.postimg.cc/NFJ8DWMm/wlc-pic.jpg")
+])
+
 intro_div = html.Div([
-    dmc.Image(src="https://i.postimg.cc/FsPhxcTm/intro-pic.jpg"),
+    dmc.Image(src="https://i.postimg.cc/m2KL5p73/intro-pic.jpg"),
     html.Br(),
     dmc.Text(
         "Greetings! I'm Manali Jain, hailing from the vibrant city of Mumbai, Maharashtra, India. My academic journey "
@@ -33,7 +37,7 @@ intro_div = html.Div([
     color="dimmed",
     ),
     ],
-    style={"paddingTop": 40}                
+    style={"paddingTop": 20}                
 )
 
 resume_div = html.Div([
@@ -75,7 +79,7 @@ pjcard1 = dmc.Card(
             color="dimmed",
         ),
         dmc.Text(
-            "The app uses a free server and advanced AI integrations so the loading time will be up to 1 min.",
+            "Please be patient while he app loads as it uses a free server and advanced AI integrations.",
             size="sm",
             color="dimmed",
             italic=True,
@@ -234,7 +238,7 @@ refcard1 = dmc.Card(
             color="dimmed",
         ),
         html.Br(),
-        dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview", 
+        dbc.Button("Letter", href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview", 
                    target="_blank")
     ],
     withBorder=True,
@@ -265,7 +269,7 @@ refcard2 = dmc.Card(
             color="dimmed",
         ),
         html.Br(),
-        dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview", 
+        dbc.Button("Letter", href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview", 
                    target="_blank")
     ],
     withBorder=True,
@@ -300,7 +304,7 @@ refcard2 = dmc.Card(
 all_refcards = [
     dmc.Header(
         height=80,
-        children=[dmc.Text("Former employers' reference letters",
+        children=[dmc.Text("Recommendation notes and letters",
                            style={"fontSize": 40})],
     ),
     dmc.SimpleGrid(
@@ -327,18 +331,20 @@ app.layout = dmc.MantineProvider(
         [
             dmc.TabsList(
                 [
-                    dmc.Tab("Introduction", value="introduction"),
+                    dmc.Tab("Welcome!", value="welcome"),
+                    dmc.Tab("Get to know me", value="introduction"),
                     dmc.Tab("Resumé", value="resume"),
                     dmc.Tab("Projects", value="projects"),
-                    dmc.Tab("References", value="references"),
+                    dmc.Tab("Testimonials", value="references"),
                 ], style={"paddingRight": 50, "paddingTop": 15}
             ),
+            dmc.TabsPanel(wlc_div, value="welcome", pb="xs"),
             dmc.TabsPanel(intro_div, value="introduction", pb="xs"),
             dmc.TabsPanel(resume_div, value="resume", pb="xs"),
             dmc.TabsPanel(children=all_pjcards, value="projects", pb="xs"),
             dmc.TabsPanel(children=all_refcards, value="references", pb="xs"),
         ],
-        value="introduction",
+        value="welcome",
         orientation='vertical',
         variant='pills',
     )
