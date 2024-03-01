@@ -8,11 +8,11 @@ from dash import Dash, html, dcc
 from dash_iconify import DashIconify
 
 wlc_div = html.Div([
-    dmc.Image(src="https://i.postimg.cc/dQSBq0km/wlc-pic.jpg")
+    dmc.Image(src="https://i.postimg.cc/C5brHnHt/wlc-pic.jpg")
 ])
 
 intro_div = html.Div([
-    dmc.Image(src="https://i.postimg.cc/3wsZgfhS/intro-pic.jpg"),
+    dmc.Image(src="https://i.postimg.cc/qqpyStHW/intro-pic.jpg"),
     html.Br(),
     dmc.Text(
         "Greetings! I'm Manali Jain, hailing from the vibrant city of Mumbai, Maharashtra, India. My academic journey "
@@ -215,6 +215,49 @@ all_pjcards = [
 #    className="my-4 text-center text-black"
 #)
 
+header = [
+    html.Thead(
+        html.Tr(
+            [
+                html.Th("Title"),
+                html.Th("Organization"),
+                html.Th("Year"),
+                html.Th("Digital copy"),
+            ]
+        )
+    )
+]
+
+row1 = html.Tr([
+    html.Td("CPRD resource module training test"), 
+    html.Td("Clinical Practice Research Datalink (CPRD)"), 
+    html.Td("2023"), 
+    html.Td(
+        dbc.Button("View", href="https://drive.google.com/file/d/1N2x9ZjaFxlx1HJsCBGw6R3hfBfW3-Fas/preview", target="_blank")
+    )
+])
+row2 = html.Tr([
+    html.Td("Data Science & Business Analytics Core Module"), 
+    html.Td("Boston Institute of Analytics (BIA)"), 
+    html.Td("2019"), 
+    html.Td(
+        dbc.Button("View", href="https://drive.google.com/file/d/1c5m_jOSt5l-Mou1GAme4D4BbunrhflhJ/preview", target="_blank")
+    )
+])
+row3 = html.Tr([
+    html.Td("PH125.1x: Data Science: R Basics"), 
+    html.Td("HarvardX"), 
+    html.Td("2019"), 
+    html.Td(
+        dbc.Button("View", href="https://drive.google.com/file/d/1Xs14mvQaM9pLYoNlmOHiRQ0Ecy9lu9PN/preview", target="_blank")
+    )
+])
+
+body = [html.Tbody([row1, row2, row3])]
+
+cert_tb = dmc.Table(header + body)
+
+
 refcard1 = dmc.Card(
     children=[
         dmc.CardSection(
@@ -398,6 +441,7 @@ app.layout = dmc.MantineProvider(
                     dmc.Tab("Get to know me", value="introduction"),
                     dmc.Tab("Resumé", value="resume"),
                     dmc.Tab("Projects", value="projects"),
+                    dmc.Tab("Certificates", value="certificates"),
                     dmc.Tab("Testimonials", value="references"),
                 ], style={"paddingRight": 50, "paddingTop": 15}
             ),
@@ -405,6 +449,7 @@ app.layout = dmc.MantineProvider(
             dmc.TabsPanel(intro_div, value="introduction", pb="xs"),
             dmc.TabsPanel(resume_div, value="resume", pb="xs"),
             dmc.TabsPanel(children=all_pjcards, value="projects", pb="xs"),
+            dmc.TabsPanel(cert_tb, value="certificates", pb="xs"),
             dmc.TabsPanel(children=all_refcards, value="references", pb="xs"),
         ],
         value="welcome",
