@@ -8,11 +8,11 @@ from dash import Dash, html, dcc
 from dash_iconify import DashIconify
 
 wlc_div = html.Div([
-    dmc.Image(src="https://i.postimg.cc/MGTPv5NF/wlc-pic.jpg")
+    dmc.Image(src="https://i.postimg.cc/dQSBq0km/wlc-pic.jpg")
 ])
 
 intro_div = html.Div([
-    dmc.Image(src="https://i.postimg.cc/pXSYsv6q/intro-pic.jpg"),
+    dmc.Image(src="https://i.postimg.cc/3wsZgfhS/intro-pic.jpg"),
     html.Br(),
     dmc.Text(
         "Greetings! I'm Manali Jain, hailing from the vibrant city of Mumbai, Maharashtra, India. My academic journey "
