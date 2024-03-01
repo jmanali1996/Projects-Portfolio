@@ -37,7 +37,7 @@ intro_div = html.Div([
     color="dimmed",
     ),
     ],
-    style={"paddingTop": 20, "paddingRight": 20}                
+    style={"paddingTop": 10, "paddingRight": 20}                
 )
 
 resume_div = html.Div([
