@@ -8,11 +8,11 @@ from dash import Dash, html, dcc
 from dash_iconify import DashIconify
 
 wlc_div = html.Div([
-    dmc.Image(src="https://i.postimg.cc/NFJ8DWMm/wlc-pic.jpg")
+    dmc.Image(src="https://i.postimg.cc/g0CmVZFf/wlc-pic.jpg")
 ])
 
 intro_div = html.Div([
-    dmc.Image(src="https://i.postimg.cc/m2KL5p73/intro-pic.jpg"),
+    dmc.Image(src="https://i.postimg.cc/bNqLW2Km/intro-pic.jpg"),
     html.Br(),
     dmc.Text(
         "Greetings! I'm Manali Jain, hailing from the vibrant city of Mumbai, Maharashtra, India. My academic journey "
@@ -32,7 +32,7 @@ intro_div = html.Div([
     ),
     dmc.Text(
         "Feel free to peruse my resume, explore the diverse projects I've undertaken, and review reference letters from colleagues. "
-        "If you'd like to get in touch, drop me a mail at jmanali1996@gmail.com.",
+        "If you'd like to get in touch, drop me an email at jmanali1996@gmail.com.",
     size="sm",
     color="dimmed",
     ),
@@ -79,7 +79,7 @@ pjcard1 = dmc.Card(
             color="dimmed",
         ),
         dmc.Text(
-            "Please be patient while he app loads as it uses a free server and advanced AI integrations.",
+            "Please be patient while the app loads as it uses a free server and advanced AI integrations.",
             size="sm",
             color="dimmed",
             italic=True,
@@ -215,8 +215,69 @@ all_pjcards = [
 #    className="my-4 text-center text-black"
 #)
 
-
 refcard1 = dmc.Card(
+    children=[
+        dmc.CardSection(
+            dmc.Image(
+                src="https://i.postimg.cc/q75JbvT1/uom.png",
+                alt="The University of Manchester"
+            ),
+        ),
+        dmc.Group(
+            [
+                dmc.Text("Dr. David Jenkins", weight=500, size='xl')
+            ],
+            position="apart",
+            mt="md",
+            mb="xs",
+        ),
+        dmc.Text(
+            "Lecturer in Health Data Sciences/Examiner No. 2",
+            size="sm",
+            color="dimmed",
+        ),
+        html.Br(),
+        dbc.Button("Dissertation Review", href="https://drive.google.com/file/d/1-JSS0bZw5AhBz7097LmVeORylKDizQQM/preview", 
+                   target="_blank")
+    ],
+    withBorder=True,
+    shadow="sm",
+    radius="md",
+    style={"width": 350},
+)
+
+refcard2 = dmc.Card(
+    children=[
+        dmc.CardSection(
+            dmc.Image(
+                src="https://i.postimg.cc/q75JbvT1/uom.png",
+                alt="The University of Manchester"
+            ),
+        ),
+        dmc.Group(
+            [
+                dmc.Text("Dr. Glen Martin", weight=500, size='xl')
+            ],
+            position="apart",
+            mt="md",
+            mb="xs",
+        ),
+        dmc.Text(
+            "Senior Lecturer in Health Data Sciences/Examiner No. 1/Supervisor",
+            size="sm",
+            color="dimmed",
+        ),
+        html.Br(),
+        dbc.Button("Dissertation Review", href="https://drive.google.com/file/d/1dYuKRtgVVY8FOvKf9cAZznKv5u-ytazD/preview", 
+                   target="_blank")
+    ],
+    withBorder=True,
+    shadow="sm",
+    radius="md",
+    style={"width": 350},
+)
+
+refcard3 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Image(
@@ -238,7 +299,7 @@ refcard1 = dmc.Card(
             color="dimmed",
         ),
         html.Br(),
-        dbc.Button("Letter", href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview", 
+        dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview", 
                    target="_blank")
     ],
     withBorder=True,
@@ -247,7 +308,7 @@ refcard1 = dmc.Card(
     style={"width": 350},
 )
 
-refcard2 = dmc.Card(
+refcard4 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Image(
@@ -269,7 +330,7 @@ refcard2 = dmc.Card(
             color="dimmed",
         ),
         html.Br(),
-        dbc.Button("Letter", href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview", 
+        dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview", 
                    target="_blank")
     ],
     withBorder=True,
@@ -316,7 +377,9 @@ all_refcards = [
         ],
         children=[
             html.Div(refcard1),
-            html.Div(refcard2)
+            html.Div(refcard2),
+            html.Div(refcard3),
+            html.Div(refcard4)
         ],
     )
 ]
