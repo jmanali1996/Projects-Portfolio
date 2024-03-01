@@ -12,7 +12,7 @@ wlc_div = html.Div([
 ])
 
 intro_div = html.Div([
-    dmc.Image(src="https://i.postimg.cc/gcgynbpY/intro-pic.jpg"),
+    dmc.Image(src="https://i.postimg.cc/3wRc6F3h/intro-pic.jpg"),
     html.Br(),
     dmc.Text(
         "Greetings! I'm Manali Jain, hailing from the vibrant city of Mumbai, Maharashtra, India. My academic journey "
