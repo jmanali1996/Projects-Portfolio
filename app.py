@@ -8,11 +8,11 @@ from dash import Dash, html, dcc
 from dash_iconify import DashIconify
 
 wlc_div = html.Div([
-    dmc.Image(src="https://i.postimg.cc/C5brHnHt/wlc-pic.jpg")
+    dmc.Image(src="https://i.postimg.cc/hvHDJYvS/wlc-pic.jpg")
 ])
 
 intro_div = html.Div([
-    dmc.Image(src="https://i.postimg.cc/qqpyStHW/intro-pic.jpg"),
+    dmc.Image(src="https://i.postimg.cc/gcgynbpY/intro-pic.jpg"),
     html.Br(),
     dmc.Text(
         "Greetings! I'm Manali Jain, hailing from the vibrant city of Mumbai, Maharashtra, India. My academic journey "
@@ -255,8 +255,11 @@ row3 = html.Tr([
 
 body = [html.Tbody([row1, row2, row3])]
 
-cert_tb = dmc.Table(header + body)
-
+cert_div = html.Div([
+    dmc.Table(header + body)
+    ],
+    style={"paddingTop": 40}             
+)
 
 refcard1 = dmc.Card(
     children=[
@@ -449,7 +452,7 @@ app.layout = dmc.MantineProvider(
             dmc.TabsPanel(intro_div, value="introduction", pb="xs"),
             dmc.TabsPanel(resume_div, value="resume", pb="xs"),
             dmc.TabsPanel(children=all_pjcards, value="projects", pb="xs"),
-            dmc.TabsPanel(cert_tb, value="certificates", pb="xs"),
+            dmc.TabsPanel(cert_div, value="certificates", pb="xs"),
             dmc.TabsPanel(children=all_refcards, value="references", pb="xs"),
         ],
         value="welcome",
