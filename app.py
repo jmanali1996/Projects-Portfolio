@@ -12,7 +12,7 @@ wlc_div = html.Div([
 ])
 
 intro_div = html.Div([
-    dmc.Image(src="https://i.postimg.cc/Pf9tTKxS/intro-pic.jpg", alt="intro pic", width=200),
+    dmc.Image(src="https://i.postimg.cc/Pf9tTKxS/intro-pic.jpg", alt="intro pic", width=1000),
     html.Br(),
     dmc.Text(
         "Greetings! I'm Manali Jain, hailing from the vibrant city of Mumbai, Maharashtra, India. My academic journey "
@@ -37,7 +37,7 @@ intro_div = html.Div([
     color="dimmed",
     ),
     ],
-    style={"paddingTop": 20}                
+    style={"paddingTop": 20, "paddingRight": 20}                
 )
 
 resume_div = html.Div([
