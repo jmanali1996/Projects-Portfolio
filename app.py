@@ -8,7 +8,7 @@ from dash import Dash, html, dcc
 from dash_iconify import DashIconify
 
 intro_div = html.Div([
-    dmc.Image(src="https://i.postimg.cc/Pf9tTKxS/intro-pic.jpg", alt="intro pic", width=750),
+    dmc.Image(src="https://i.postimg.cc/Pf9tTKxS/intro-pic.jpg", alt="intro pic", width=650),
     html.Br(),
     dmc.Text(
         "Greetings! I'm Manali Jain, hailing from the vibrant city of Mumbai, Maharashtra, India. My academic journey "
@@ -32,7 +32,8 @@ intro_div = html.Div([
     color="white",
     ),
     dmc.Text(
-        "If you'd like to get in touch, drop me an email at jmanali1996@gmail.com.",
+        "If you'd like to get in touch, drop me an email at ",
+        html.A("jmanali1996@gmail.com", href='mailto:jmanali1996@gmail.com', target="_blank"),
     size="sm",
     color="white",
     weight=900,
@@ -51,7 +52,7 @@ intro_div = html.Div([
                 ),
                 dmc.Text("LinkedIn", size='sm')
             ],
-            position="apart",
+            position="left",
             mt="md",
             mb="xs",
     ),
@@ -64,7 +65,7 @@ intro_div = html.Div([
                 ),
                 dmc.Text("GitHub", size='sm')
             ],
-            position="apart",
+            position="left",
             mt="md",
             mb="xs",
     ),
@@ -77,7 +78,7 @@ intro_div = html.Div([
                 ),
                 dmc.Text("Instagram", size='sm')
             ],
-            position="apart",
+            position="left",
             mt="md",
             mb="xs",
     ),
@@ -133,6 +134,7 @@ pjcard1 = dmc.Card(
     withBorder=True,
     shadow="sm",
     radius="md",
+    color="white",
     style={"width": 350},
 )
 
@@ -171,6 +173,7 @@ pjcard2 = dmc.Card(
     withBorder=True,
     shadow="sm",
     radius="md",
+    color="white",
     style={"width": 350},
 )
 
@@ -303,6 +306,7 @@ body = [html.Tbody([row1, row2, row3])]
 cert_div = html.Div([
     dmc.Table(header + body)
     ],
+    color="white",
     style={"paddingTop": 40}             
 )
 
@@ -334,6 +338,7 @@ refcard1 = dmc.Card(
     withBorder=True,
     shadow="sm",
     radius="md",
+    color="white",
     style={"width": 350},
 )
 
@@ -365,6 +370,7 @@ refcard2 = dmc.Card(
     withBorder=True,
     shadow="sm",
     radius="md",
+    color="white",
     style={"width": 350},
 )
 
@@ -396,6 +402,7 @@ refcard3 = dmc.Card(
     withBorder=True,
     shadow="sm",
     radius="md",
+    color="white",
     style={"width": 350},
 )
 
@@ -427,6 +434,7 @@ refcard4 = dmc.Card(
     withBorder=True,
     shadow="sm",
     radius="md",
+    color="white",
     style={"width": 350},
 )
 
@@ -490,7 +498,7 @@ app.layout = dmc.MantineProvider(
                     dmc.Tab("Projects", value="projects"),
                     dmc.Tab("Certificates", value="certificates"),
                     dmc.Tab("Testimonials", value="references"),
-                ], style={"paddingRight": 50, "paddingTop": 15}
+                ], color="white", style={"paddingRight": 50, "paddingTop": 15}
             ),
             dmc.TabsPanel(intro_div, value="introduction", pb="xs"),
             dmc.TabsPanel(resume_div, value="resume", pb="xs"),
