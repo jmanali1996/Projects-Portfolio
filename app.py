@@ -24,32 +24,32 @@ intro_div = html.Div([
         "like life itself, crocheting starts as a jumble of yarn, but with patience and skill, transforms into a masterpiece. "
         "Indeed, life and work are akin to crafting intricate pieces of art, each with its unique beauty waiting to be unveiled.",
     size="sm",
-    color="dimmed",
+    color="white",
     ),
     dmc.Text(
         "Feel free to peruse my resume, explore the diverse projects I've undertaken, and review reference letters from colleagues.",
     size="sm",
-    color="dimmed",
+    color="white",
     ),
     dmc.Text(
         "If you'd like to get in touch, drop me an email at jmanali1996@gmail.com.",
     size="sm",
-    color="dimmed",
+    color="white",
     weight=900,
     ),
     dmc.Text(
         "Socially, I'm active on:",
     size="sm",
-    color="dimmed",
+    color="white",
     ),
     dmc.Group(
             [
-                dmc.Text("LinkedIn", size='sm'),
                 html.A(
                     DashIconify(icon="mdi:linkedin", width=30),
                     href='www.linkedin.com/in/manalijain09',
                     target="_blank"
-                )
+                ),
+                dmc.Text("LinkedIn", size='sm')
             ],
             position="apart",
             mt="md",
@@ -57,12 +57,12 @@ intro_div = html.Div([
     ),
     dmc.Group(
             [
-                dmc.Text("GitHub", size='sm'),
                 html.A(
                     DashIconify(icon="ion:logo-github", width=30),
                     href='https://github.com/jmanali1996',
                     target="_blank"
-                )
+                ),
+                dmc.Text("GitHub", size='sm')
             ],
             position="apart",
             mt="md",
@@ -70,12 +70,12 @@ intro_div = html.Div([
     ),
     dmc.Group(
             [
-                dmc.Text("Instagram", size='sm'),
                 html.A(
                     DashIconify(icon="mdi:instagram", width=30),
                     href='https://instagram.com/mjain09',
                     target="_blank"
-                )
+                ),
+                dmc.Text("Instagram", size='sm')
             ],
             position="apart",
             mt="md",
@@ -121,12 +121,12 @@ pjcard1 = dmc.Card(
             "A chatbot built for the Wildbirdfund Nyc that can help save the lives of thousands of birds annually and can be used to " 
             "reduce bird-glass collisions and offer help to injured birds.",
             size="sm",
-            color="dimmed",
+            color="white",
         ),
         dmc.Text(
             "Please be patient while the app loads as it uses a free server and advanced AI integrations.",
             size="sm",
-            color="dimmed",
+            color="white",
             italic=True,
         ),
     ],
@@ -165,7 +165,7 @@ pjcard2 = dmc.Card(
             "My research focused on developing and validating a multi-state model to predict multimorbidity of cardiovascular disease, " 
             "type 2 diabetes, and chronic kidney diseases.",
             size="sm",
-            color="dimmed",
+            color="white",
         ),
     ],
     withBorder=True,
@@ -202,7 +202,7 @@ pjcard2 = dmc.Card(
 #        dmc.Text(
 #            "Your project description to share with the viewers of your portfolio.",
 #            size="sm",
-#            color="dimmed",
+#            color="white",
 #        ),
 #    ],
 #    withBorder=True,
@@ -325,7 +325,7 @@ refcard1 = dmc.Card(
         dmc.Text(
             "Lecturer in Health Data Sciences/Examiner No. 2",
             size="sm",
-            color="dimmed",
+            color="white",
         ),
         html.Br(),
         dbc.Button("Dissertation Review", href="https://drive.google.com/file/d/1-JSS0bZw5AhBz7097LmVeORylKDizQQM/preview", 
@@ -356,7 +356,7 @@ refcard2 = dmc.Card(
         dmc.Text(
             "Senior Lecturer in Health Data Sciences/Examiner No. 1/Supervisor",
             size="sm",
-            color="dimmed",
+            color="white",
         ),
         html.Br(),
         dbc.Button("Dissertation Review", href="https://drive.google.com/file/d/1dYuKRtgVVY8FOvKf9cAZznKv5u-ytazD/preview", 
@@ -387,7 +387,7 @@ refcard3 = dmc.Card(
         dmc.Text(
             "Founder/Chief Technology Officer",
             size="sm",
-            color="dimmed",
+            color="white",
         ),
         html.Br(),
         dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview", 
@@ -418,7 +418,7 @@ refcard4 = dmc.Card(
         dmc.Text(
             "Chief Marketing Officer",
             size="sm",
-            color="dimmed",
+            color="white",
         ),
         html.Br(),
         dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview", 
@@ -442,7 +442,7 @@ refcard4 = dmc.Card(
 #            dmc.Text(
 #                "when a man's biggest dreams include seconds on dessert, occasional snuggling and sleeping in til noon on weekends, no one man can destroy them.",
 #                size="sm",
-#                color="dimmed",
+#                color="white",
 #            ),
 #        ],
 #        withBorder=True,
