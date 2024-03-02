@@ -8,16 +8,15 @@ from dash import Dash, html, dcc
 from dash_iconify import DashIconify
 
 intro_div = html.Div([
-    dmc.Image(src="https://i.postimg.cc/Pf9tTKxS/intro-pic.jpg", alt="intro pic", width=1000),
+    dmc.Image(src="https://i.postimg.cc/Pf9tTKxS/intro-pic.jpg", alt="intro pic", width=750),
     html.Br(),
-    dmc.Highlight(
+    dmc.Text(
         "Greetings! I'm Manali Jain, hailing from the vibrant city of Mumbai, Maharashtra, India. My academic journey "
         "led me through the realms of Psychology for my graduation, followed by a deep dive into the field of Health "
         "Data Science for my master's degree. With a professional trajectory spanning over three years, I've donned "
         "various hats, serving as a Business Data Analyst, Data Engineer, and Student Researcher.",
-    highlight="Greetings! I'm Manali Jain",
     size="sm",
-    color="dimmed",
+    color="white",
     ),
     dmc.Text(
         "My passion lies in leveraging data science and analytics to catalyze transformative discoveries that resonate with "
@@ -36,7 +35,51 @@ intro_div = html.Div([
         "If you'd like to get in touch, drop me an email at jmanali1996@gmail.com.",
     size="sm",
     color="dimmed",
-    weight=700,
+    weight=900,
+    ),
+    dmc.Text(
+        "Socially, I'm active on:",
+    size="sm",
+    color="dimmed",
+    ),
+    dmc.Group(
+            [
+                dmc.Text("LinkedIn", size='sm'),
+                html.A(
+                    DashIconify(icon="mdi:linkedin", width=30),
+                    href='www.linkedin.com/in/manalijain09',
+                    target="_blank"
+                )
+            ],
+            position="apart",
+            mt="md",
+            mb="xs",
+    ),
+    dmc.Group(
+            [
+                dmc.Text("GitHub", size='sm'),
+                html.A(
+                    DashIconify(icon="ion:logo-github", width=30),
+                    href='https://github.com/jmanali1996',
+                    target="_blank"
+                )
+            ],
+            position="apart",
+            mt="md",
+            mb="xs",
+    ),
+    dmc.Group(
+            [
+                dmc.Text("Instagram", size='sm'),
+                html.A(
+                    DashIconify(icon="mdi:instagram", width=30),
+                    href='https://instagram.com/mjain09',
+                    target="_blank"
+                )
+            ],
+            position="apart",
+            mt="md",
+            mb="xs",
     ),
     ],
     style={"paddingTop": 10, "paddingRight": 20}                
