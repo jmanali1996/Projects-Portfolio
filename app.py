@@ -7,18 +7,15 @@ import dash_bootstrap_components as dbc
 from dash import Dash, html, dcc
 from dash_iconify import DashIconify
 
-wlc_div = html.Div([
-    dmc.Image(src="https://i.postimg.cc/hvHDJYvS/wlc-pic.jpg", alt="wlc pic")
-])
-
 intro_div = html.Div([
     dmc.Image(src="https://i.postimg.cc/Pf9tTKxS/intro-pic.jpg", alt="intro pic", width=1000),
     html.Br(),
-    dmc.Text(
+    dmc.Highlight(
         "Greetings! I'm Manali Jain, hailing from the vibrant city of Mumbai, Maharashtra, India. My academic journey "
         "led me through the realms of Psychology for my graduation, followed by a deep dive into the field of Health "
         "Data Science for my master's degree. With a professional trajectory spanning over three years, I've donned "
         "various hats, serving as a Business Data Analyst, Data Engineer, and Student Researcher.",
+    highlight="Greetings! I'm Manali Jain",
     size="sm",
     color="dimmed",
     ),
@@ -31,10 +28,15 @@ intro_div = html.Div([
     color="dimmed",
     ),
     dmc.Text(
-        "Feel free to peruse my resume, explore the diverse projects I've undertaken, and review reference letters from colleagues. "
+        "Feel free to peruse my resume, explore the diverse projects I've undertaken, and review reference letters from colleagues.",
+    size="sm",
+    color="dimmed",
+    ),
+    dmc.Text(
         "If you'd like to get in touch, drop me an email at jmanali1996@gmail.com.",
     size="sm",
     color="dimmed",
+    weight=700,
     ),
     ],
     style={"paddingTop": 10, "paddingRight": 20}                
@@ -440,7 +442,6 @@ app.layout = dmc.MantineProvider(
         [
             dmc.TabsList(
                 [
-                    dmc.Tab("Welcome!", value="welcome"),
                     dmc.Tab("Get to know me", value="introduction"),
                     dmc.Tab("Resumé", value="resume"),
                     dmc.Tab("Projects", value="projects"),
@@ -448,14 +449,13 @@ app.layout = dmc.MantineProvider(
                     dmc.Tab("Testimonials", value="references"),
                 ], style={"paddingRight": 50, "paddingTop": 15}
             ),
-            dmc.TabsPanel(wlc_div, value="welcome", pb="xs"),
             dmc.TabsPanel(intro_div, value="introduction", pb="xs"),
             dmc.TabsPanel(resume_div, value="resume", pb="xs"),
             dmc.TabsPanel(children=all_pjcards, value="projects", pb="xs"),
             dmc.TabsPanel(cert_div, value="certificates", pb="xs"),
             dmc.TabsPanel(children=all_refcards, value="references", pb="xs"),
         ],
-        value="welcome",
+        value="introduction",
         orientation='vertical',
         variant='pills',
     )
