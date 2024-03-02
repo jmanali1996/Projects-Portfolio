@@ -107,7 +107,7 @@ pjcard1 = dmc.Card(
         ),
         dmc.Group(
             [
-                dmc.Text("Wild Bird Fund Chatbot", weight=500, size='xl'),
+                dmc.Text("Wild Bird Fund Chatbot", weight=500, size='xl', color="white"),
                 html.A(
                     DashIconify(icon="ion:logo-github", width=30),
                     href='https://github.com/jmanali1996/WBF-Chatbot.git',
@@ -134,7 +134,6 @@ pjcard1 = dmc.Card(
     withBorder=True,
     shadow="sm",
     radius="md",
-    color="white",
     style={"width": 350},
 )
 
@@ -152,7 +151,7 @@ pjcard2 = dmc.Card(
         ),
         dmc.Group(
             [
-                dmc.Text("Multimorbidity Multistate Model", weight=500, size='xl'),
+                dmc.Text("Multimorbidity Multistate Model", weight=500, size='xl', color="white"),
                 html.A(
                     DashIconify(icon="ion:logo-github", width=30),
                     href='https://github.com/jmanali1996/Multimorbidity-Multistate-Model.git',
@@ -173,7 +172,6 @@ pjcard2 = dmc.Card(
     withBorder=True,
     shadow="sm",
     radius="md",
-    color="white",
     style={"width": 350},
 )
 
@@ -218,6 +216,7 @@ all_pjcards = [
     dmc.Header(
         height=80,
         children=[dmc.Text("Data Analysis and AI Projects",
+                           color="white",
                            style={"fontSize": 40})],
     ),
     dmc.SimpleGrid(
@@ -320,7 +319,7 @@ refcard1 = dmc.Card(
         ),
         dmc.Group(
             [
-                dmc.Text("Dr. David Jenkins", weight=500, size='xl')
+                dmc.Text("Dr. David Jenkins", weight=500, size='xl', color="white")
             ],
             position="apart",
             mt="md",
@@ -338,7 +337,6 @@ refcard1 = dmc.Card(
     withBorder=True,
     shadow="sm",
     radius="md",
-    color="white",
     style={"width": 350},
 )
 
@@ -352,7 +350,7 @@ refcard2 = dmc.Card(
         ),
         dmc.Group(
             [
-                dmc.Text("Dr. Glen Martin", weight=500, size='xl')
+                dmc.Text("Dr. Glen Martin", weight=500, size='xl', color="white")
             ],
             position="apart",
             mt="md",
@@ -370,7 +368,6 @@ refcard2 = dmc.Card(
     withBorder=True,
     shadow="sm",
     radius="md",
-    color="white",
     style={"width": 350},
 )
 
@@ -384,7 +381,7 @@ refcard3 = dmc.Card(
         ),
         dmc.Group(
             [
-                dmc.Text("Dr. Yogesh Karpate", weight=500, size='xl')
+                dmc.Text("Dr. Yogesh Karpate", weight=500, size='xl', color="white")
             ],
             position="apart",
             mt="md",
@@ -402,7 +399,6 @@ refcard3 = dmc.Card(
     withBorder=True,
     shadow="sm",
     radius="md",
-    color="white",
     style={"width": 350},
 )
 
@@ -416,7 +412,7 @@ refcard4 = dmc.Card(
         ),
         dmc.Group(
             [
-                dmc.Text("Mr. Rishi Jain", weight=500, size='xl')
+                dmc.Text("Mr. Rishi Jain", weight=500, size='xl', color="white")
             ],
             position="apart",
             mt="md",
@@ -434,7 +430,6 @@ refcard4 = dmc.Card(
     withBorder=True,
     shadow="sm",
     radius="md",
-    color="white",
     style={"width": 350},
 )
 
@@ -464,7 +459,8 @@ refcard4 = dmc.Card(
 all_refcards = [
     dmc.Header(
         height=80,
-        children=[dmc.Text("Recommendation notes and letters",
+        children=[dmc.Text("Recommendation notes and letters", 
+                           color="white",
                            style={"fontSize": 40})],
     ),
     dmc.SimpleGrid(
