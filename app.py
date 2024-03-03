@@ -1,7 +1,3 @@
-# These first 3 lines of code are needed when running the app in https://wasmdash.vercel.app/
-# import micropip
-# await micropip.install('dash-mantine-components')
-# await micropip.install('dash-iconify')
 import dash_mantine_components as dmc
 import dash_bootstrap_components as dbc
 from dash import Dash, html, dcc
@@ -9,13 +5,13 @@ from dash_iconify import DashIconify
 
 #INTRODUCTION
 intro_div = html.Div([
-    dmc.Image(src="https://i.postimg.cc/Pf9tTKxS/intro-pic.jpg", alt="intro pic", width=650),
+    dmc.Image(src="https://i.postimg.cc/Pf9tTKxS/intro-pic.jpg", alt="intro pic", width=750),
     html.Br(),
-    dmc.Text(
-        "Greetings! I'm Manali Jain, hailing from the vibrant city of Mumbai, Maharashtra, India. My academic journey "
+    dmc.Text(children=[
+        html.B("Greetings! I'm Manali Jain"), ", hailing from the vibrant city of Mumbai, Maharashtra, India. My academic journey "
         "led me through the realms of Psychology for my graduation, followed by a deep dive into the field of Health "
         "Data Science for my master's degree. With a professional trajectory spanning over three years, I've donned "
-        "various hats, serving as a Business Data Analyst, Data Engineer, and Student Researcher.",
+        "various hats, serving as a Business Data Analyst, Data Engineer, and Student Researcher."],
     size="sm",
     color="white",
     ),
@@ -32,56 +28,62 @@ intro_div = html.Div([
     size="sm",
     color="white",
     ),
+    html.Br(),
     dmc.Text(
-        "If you'd like to get in touch, drop me an email at ",
-        html.A("jmanali1996@gmail.com", href='mailto:jmanali1996@gmail.com', target="_blank"),
-    size="sm",
-    color="white",
-    weight=900,
+        [
+            "If you'd like to get in touch, drop me an email at ",
+            html.A("jmanali1996@gmail.com", href='mailto:jmanali1996@gmail.com', target="_blank")
+        ],
+        size="sm",
+        color="white",
+        weight=900,
+        italic=True,
     ),
     dmc.Text(
         "Socially, I'm active on:",
     size="sm",
     color="white",
+    weight=900,
+    italic=True,
     ),
-    dmc.Group(
-            [
-                html.A(
-                    DashIconify(icon="mdi:linkedin", width=30),
-                    href='www.linkedin.com/in/manalijain09',
-                    target="_blank"
-                ),
-                dmc.Text("LinkedIn", size='sm')
-            ],
-            position="left",
-            mt="md",
-            mb="xs",
-    ),
-    dmc.Group(
-            [
-                html.A(
-                    DashIconify(icon="ion:logo-github", width=30),
-                    href='https://github.com/jmanali1996',
-                    target="_blank"
-                ),
-                dmc.Text("GitHub", size='sm')
-            ],
-            position="left",
-            mt="md",
-            mb="xs",
-    ),
-    dmc.Group(
-            [
-                html.A(
-                    DashIconify(icon="mdi:instagram", width=30),
-                    href='https://instagram.com/mjain09',
-                    target="_blank"
-                ),
-                dmc.Text("Instagram", size='sm')
-            ],
-            position="left",
-            mt="md",
-            mb="xs",
+    dmc.Group(children=[
+        dmc.Group(
+                [
+                    html.A(children=[
+                        DashIconify(icon="mdi:linkedin", width=25), dmc.Text("LinkedIn", size='sm')],
+                        href='www.linkedin.com/in/manalijain09',
+                        target="_blank"
+                    )
+                ],
+                position="left",
+                mt="md",
+                mb="xs",
+        ),
+        dmc.Group(
+                [
+                    html.A(children=[
+                        DashIconify(icon="ion:logo-github", width=25), dmc.Text("GitHub", size='sm')],
+                        href='https://github.com/jmanali1996',
+                        target="_blank"
+                    )
+                ],
+                position="left",
+                mt="md",
+                mb="xs",
+        ),
+        dmc.Group(
+                [
+                    html.A(children=[
+                        DashIconify(icon="mdi:instagram", width=25), dmc.Text("Instagram", size='sm')],
+                        href='https://instagram.com/mjain09',
+                        target="_blank"
+                    )
+                ],
+                position="left",
+                mt="md",
+                mb="xs",
+        ),
+        ]
     ),
     ],
     style={"paddingTop": 10, "paddingRight": 20}                
@@ -92,7 +94,7 @@ resume_div = html.Div([
     html.Iframe(src="https://drive.google.com/file/d/1u90zM7WbGaVLAl6sdr3tnKaX-CUrVzIw/preview",
                 width="1000", height="1200")
     ],
-    style={"paddingTop": 40}
+    style={"paddingTop": 20}
 )
 
 #PROJECTS
@@ -110,7 +112,7 @@ pjcard1 = dmc.Card(
         ),
         dmc.Group(
             [
-                dmc.Text("Wild Bird Fund Chatbot", weight=500, size='xl'),
+                dmc.Text("Wild Bird Fund Chatbot", weight=500, size='xl', color="white"),
                 html.A(
                     DashIconify(icon="ion:logo-github", width=30),
                     href='https://github.com/jmanali1996/WBF-Chatbot.git',
@@ -130,7 +132,7 @@ pjcard1 = dmc.Card(
         dmc.Text(
             "Please be patient while the app loads as it uses a free server and advanced AI integrations.",
             size="sm",
-            color="white",
+            color="dimmed",
             italic=True,
         ),
     ],
@@ -154,7 +156,7 @@ pjcard2 = dmc.Card(
         ),
         dmc.Group(
             [
-                dmc.Text("Multimorbidity Multistate Model", weight=500, size='xl'),
+                dmc.Text("Multimorbidity Multistate Model", weight=500, size='xl', color="white"),
                 html.A(
                     DashIconify(icon="ion:logo-github", width=30),
                     href='https://github.com/jmanali1996/Multimorbidity-Multistate-Model.git',
@@ -182,7 +184,7 @@ all_pjcards = [
     dmc.Header(
         height=80,
         children=[dmc.Text("Data Analysis and AI Projects",
-                           style={"fontSize": 40})],
+                           style={"fontSize": 40}, color="white")],
     ),
     dmc.SimpleGrid(
         cols=3,
@@ -242,7 +244,7 @@ body = [html.Tbody([row1, row2, row3])]
 cert_div = html.Div([
     dmc.Table(header + body)
     ],
-    style={"paddingTop": 40}             
+    style={"paddingTop": 40, "paddingRight": 40}             
 )
 
 #REFERENCES
@@ -256,7 +258,7 @@ refcard1 = dmc.Card(
         ),
         dmc.Group(
             [
-                dmc.Text("Dr. David Jenkins", weight=500, size='xl')
+                dmc.Text("Dr. David Jenkins", weight=500, size='xl', color="white")
             ],
             position="apart",
             mt="md",
@@ -287,7 +289,7 @@ refcard2 = dmc.Card(
         ),
         dmc.Group(
             [
-                dmc.Text("Dr. Glen Martin", weight=500, size='xl')
+                dmc.Text("Dr. Glen Martin", weight=500, size='xl', color="white")
             ],
             position="apart",
             mt="md",
@@ -318,7 +320,7 @@ refcard3 = dmc.Card(
         ),
         dmc.Group(
             [
-                dmc.Text("Dr. Yogesh Karpate", weight=500, size='xl')
+                dmc.Text("Dr. Yogesh Karpate", weight=500, size='xl', color="white")
             ],
             position="apart",
             mt="md",
@@ -349,7 +351,7 @@ refcard4 = dmc.Card(
         ),
         dmc.Group(
             [
-                dmc.Text("Mr. Rishi Jain", weight=500, size='xl')
+                dmc.Text("Mr. Rishi Jain", weight=500, size='xl', color="white")
             ],
             position="apart",
             mt="md",
@@ -374,7 +376,7 @@ all_refcards = [
     dmc.Header(
         height=80,
         children=[dmc.Text("Recommendation notes and letters", 
-                           style={"fontSize": 40})],
+                           style={"fontSize": 40}, color="white")],
     ),
     dmc.SimpleGrid(
         cols=3,
