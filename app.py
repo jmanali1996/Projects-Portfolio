@@ -7,6 +7,7 @@ import dash_bootstrap_components as dbc
 from dash import Dash, html, dcc
 from dash_iconify import DashIconify
 
+#INTRODUCTION
 intro_div = html.Div([
     dmc.Image(src="https://i.postimg.cc/Pf9tTKxS/intro-pic.jpg", alt="intro pic", width=650),
     html.Br(),
@@ -86,6 +87,7 @@ intro_div = html.Div([
     style={"paddingTop": 10, "paddingRight": 20}                
 )
 
+#RESUME
 resume_div = html.Div([
     html.Iframe(src="https://drive.google.com/file/d/1u90zM7WbGaVLAl6sdr3tnKaX-CUrVzIw/preview",
                 width="1000", height="1200")
@@ -93,6 +95,7 @@ resume_div = html.Div([
     style={"paddingTop": 40}
 )
 
+#PROJECTS
 pjcard1 = dmc.Card(
     children=[
         dmc.CardSection(
@@ -175,43 +178,6 @@ pjcard2 = dmc.Card(
     style={"width": 350},
 )
 
-#card3 = dmc.Card(
-#    children=[
-#        dmc.CardSection(
-#            dmc.Anchor(
-#                dmc.Image(
-#                    src="https://i.im.ge/2024/01/11/3xar3p.your-project-filler.png",
-#                    alt="dash-app",
-#                ),
-#                href="https://charming-data.com/",
-#                target="_blank"
-#            ),
-#        ),
-#        dmc.Group(
-#            [
-#                dmc.Text("Your Project Title", weight=500, size='xl'),
-#                html.A(
-#                    DashIconify(icon="skill-icons:linkedin", width=30),
-#                    href='https://www.linkedin.com/in/adam-schroeder-17b5a819/',
-#                    target="_blank"
-#                )
-#            ],
-#            position="apart",
-#            mt="md",
-#            mb="xs",
-#        ),
-#        dmc.Text(
-#            "Your project description to share with the viewers of your portfolio.",
-#            size="sm",
-#            color="white",
-#        ),
-#    ],
-#    withBorder=True,
-#    shadow="sm",
-#    radius="md",
-#    style={"width": 350},
-#)
-
 all_pjcards = [
     dmc.Header(
         height=80,
@@ -228,39 +194,11 @@ all_pjcards = [
         children=[
             html.Div(pjcard1),
             html.Div(pjcard2)
-            #html.Div(card3),
         ],
     )
 ]
 
-#cs_field = "https://www.f6s.com/content-resource/profiles/2595505_original.jpg"
-#refcard1 = dbc.Card(
-#    [
-#        dbc.CardImg(src=cs_field),
-#        dbc.CardImgOverlay([
-#            html.H2("Dr. Yogesh Karpate"),
-#            html.H3("Founder/Chief Technology Officer"),
-#            dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview", target="_blank"),
-#        ])
-#    ],
-#    style={"maxWidth": 500},
-#    className="my-4 text-center text-black"
-#)
-
-#hm_field = "https://hotmuggs.com/cdn/shop/files/Hot_Muggs_3D_Wall_Gold_Logo.jpg?v=1641220143"
-#refcard2 = dbc.Card(
-#    [
-#        dbc.CardImg(src=hm_field),
-#        dbc.CardImgOverlay([
-#            html.H2("Mr. Rishi Jain"),
-#            html.H3("Chief Marketing Officer"),
-#            dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview", target="_blank"),
-#        ])
-#    ],
-#    style={"maxWidth": 500},
-#    className="my-4 text-center text-black"
-#)
-
+#CERTIFICATES
 header = [
     html.Thead(
         html.Tr(
@@ -307,6 +245,7 @@ cert_div = html.Div([
     style={"paddingTop": 40}             
 )
 
+#REFERENCES
 refcard1 = dmc.Card(
     children=[
         dmc.CardSection(
@@ -431,29 +370,6 @@ refcard4 = dmc.Card(
     style={"width": 350},
 )
 
-#reference_card = html.Div([
-#    dmc.Card(
-#        children=[
-#            dmc.Text("Marge Simpson", weight=500, size='xl'),
-#            dmc.Text(
-#                "Pretzel business Owner",
-#                size="md",
-#                mb="xs",
-#            ),
-#            dmc.Text(
-#                "when a man's biggest dreams include seconds on dessert, occasional snuggling and sleeping in til noon on weekends, no one man can destroy them.",
-#                size="sm",
-#                color="white",
-#            ),
-#        ],
-#        withBorder=True,
-#        shadow="sm",
-#        radius="md",
-#        style={"width": 350})
-#    ],
-#    style={"paddingTop": 40}
-#)
-
 all_refcards = [
     dmc.Header(
         height=80,
@@ -476,6 +392,7 @@ all_refcards = [
     )
 ]
 
+#LAYOUT
 app = Dash(__name__, external_stylesheets=[dbc.themes.SPACELAB, dbc.icons.BOOTSTRAP])
 server = app.server
 app.layout = dmc.MantineProvider(
