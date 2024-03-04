@@ -129,12 +129,6 @@ pjcard1 = dmc.Card(
             size="sm",
             color="white",
         ),
-        dmc.Text(
-            "Please be patient while the app loads as it uses a free server and advanced AI integrations.",
-            size="sm",
-            color="dimmed",
-            italic=True,
-        ),
     ],
     withBorder=True,
     shadow="sm",
