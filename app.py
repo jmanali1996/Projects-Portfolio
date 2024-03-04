@@ -105,6 +105,7 @@ pjcard1 = dmc.Card(
                 dmc.Image(
                     src="https://i.postimg.cc/qvRkYh2x/chatbot.jpg",
                     alt="Wild Bird Fund Chatbot",
+                    width=350
                 ),
                 href="https://wbf-chatbot.onrender.com",
                 target="_blank"
@@ -149,6 +150,7 @@ pjcard2 = dmc.Card(
                 dmc.Image(
                     src="https://i.postimg.cc/SKCBhGbv/mmm.png",
                     alt="Multimorbidity Multistate Model",
+                    width=350
                 ),
                 href="https://www.slideshare.net/slideshows/multimorbidity-multistate-model/265530051",
                 target="_blank"
@@ -252,8 +254,9 @@ refcard1 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Image(
-                src="https://i.postimg.cc/q75JbvT1/uom.png",
-                alt="The University of Manchester"
+                src="https://i.postimg.cc/kgq0PZsM/uom.gif",
+                alt="The University of Manchester",
+                width=350
             ),
         ),
         dmc.Group(
@@ -283,8 +286,9 @@ refcard2 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Image(
-                src="https://i.postimg.cc/q75JbvT1/uom.png",
-                alt="The University of Manchester"
+                src="https://i.postimg.cc/kgq0PZsM/uom.gif",
+                alt="The University of Manchester",
+                width=350
             ),
         ),
         dmc.Group(
@@ -314,8 +318,9 @@ refcard3 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Image(
-                src="https://i.postimg.cc/XJLR7kCP/Chistats.png",
-                alt="Chistats Labs Pvt. Ltd."
+                src="https://i.postimg.cc/BnBP9JkY/Chistats.jpg",
+                alt="Chistats Labs Pvt. Ltd.",
+                width=350
             ),
         ),
         dmc.Group(
@@ -345,8 +350,9 @@ refcard4 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Image(
-                src="https://i.postimg.cc/L8swN1Gk/Hotmuggs.png",
-                alt="Hot Stuffs Pvt. Ltd."
+                src="https://i.postimg.cc/rwRcxjCS/Hotmuggs.jpg",
+                alt="Hot Stuffs Pvt. Ltd.",
+                width=350
             ),
         ),
         dmc.Group(
