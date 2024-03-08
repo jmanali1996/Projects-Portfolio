@@ -248,6 +248,38 @@ refcard1 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Image(
+                src="https://i.postimg.cc/mgJSxBSY/cd.webp",
+                alt="Charming Data Community",
+                width=350
+            ),
+        ),
+        dmc.Group(
+            [
+                dmc.Text("Mr. Adam Schroeder", weight=500, size='xl', color="white")
+            ],
+            position="apart",
+            mt="md",
+            mb="xs",
+        ),
+        dmc.Text(
+            "Founder",
+            size="sm",
+            color="white",
+        ),
+        html.Br(),
+        dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1odmD1v547BzKomPq7wBrhmAQjuvBWQR6/preview", 
+                   target="_blank")
+    ],
+    withBorder=True,
+    shadow="sm",
+    radius="md",
+    style={"width": 350},
+)
+
+refcard2 = dmc.Card(
+    children=[
+        dmc.CardSection(
+            dmc.Image(
                 src="https://i.postimg.cc/kgq0PZsM/uom.gif",
                 alt="The University of Manchester",
                 width=350
@@ -276,7 +308,7 @@ refcard1 = dmc.Card(
     style={"width": 350},
 )
 
-refcard2 = dmc.Card(
+refcard3 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Image(
@@ -308,7 +340,7 @@ refcard2 = dmc.Card(
     style={"width": 350},
 )
 
-refcard3 = dmc.Card(
+refcard4 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Image(
@@ -340,7 +372,7 @@ refcard3 = dmc.Card(
     style={"width": 350},
 )
 
-refcard4 = dmc.Card(
+refcard5 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Image(
@@ -389,7 +421,8 @@ all_refcards = [
             html.Div(refcard1),
             html.Div(refcard2),
             html.Div(refcard3),
-            html.Div(refcard4)
+            html.Div(refcard4),
+            html.Div(refcard5)
         ],
     )
 ]
