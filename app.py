@@ -248,7 +248,7 @@ refcard1 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Image(
-                src="https://i.postimg.cc/mgJSxBSY/cd.webp",
+                src="https://i.postimg.cc/X75hLWmz/Charming-Data.webp",
                 alt="Charming Data Community",
                 width=350
             ),
