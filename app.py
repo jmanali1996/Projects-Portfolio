@@ -2,6 +2,7 @@ import dash_mantine_components as dmc
 import dash_bootstrap_components as dbc
 from dash import Dash, html, dcc
 from dash_iconify import DashIconify
+import flask
 
 #INTRODUCTION
 intro_div = html.Div([
@@ -428,8 +429,8 @@ all_refcards = [
 ]
 
 #LAYOUT
-app = Dash(__name__, external_stylesheets=[dbc.themes.SPACELAB, dbc.icons.BOOTSTRAP])
-server = app.server
+server = flask.Flask(__name__)
+app = Dash(__name__, external_stylesheets=[dbc.themes.SPACELAB, dbc.icons.BOOTSTRAP], server=server)
 app.layout = dmc.MantineProvider(
     theme={"colorScheme": "dark"},
     withGlobalStyles=True,
@@ -459,4 +460,4 @@ app.layout = dmc.MantineProvider(
 
 
 if __name__=='__main__':
-    app.run_server(debug=False)
+    app.run_server(debug=True)
