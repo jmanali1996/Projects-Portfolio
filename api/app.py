@@ -2,6 +2,7 @@ import dash_mantine_components as dmc
 import dash_bootstrap_components as dbc
 from dash import Dash, html, dcc
 from dash_iconify import DashIconify
+from flask import Flask
 
 #INTRODUCTION
 intro_div = html.Div([
