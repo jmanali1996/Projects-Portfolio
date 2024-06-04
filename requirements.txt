@@ -25,7 +25,7 @@ requests
 retrying
 six
 tenacity
-typing_extensions==4.11.0
-urllib3==2.2.1
-Werkzeug==3.0.3
-zipp==3.18.2
+typing_extensions
+urllib3
+Werkzeug
+zipp
