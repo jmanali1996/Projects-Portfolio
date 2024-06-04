@@ -5,7 +5,7 @@ from dash_iconify import DashIconify
 
 #INTRODUCTION
 intro_div = html.Div([
-    dmc.Image(src="https://i.postimg.cc/Pf9tTKxS/intro-pic.jpg", alt="intro pic", width=750),
+    dmc.Image(src="https://i.postimg.cc/Pf9tTKxS/intro-pic.jpg", alt="intro pic", style={'width': '750px'}),
     html.Br(),
     dmc.Text(children=[
         html.B("Greetings! I'm Manali Jain"), ", hailing from the vibrant city of Mumbai, Maharashtra, India. My academic journey "
