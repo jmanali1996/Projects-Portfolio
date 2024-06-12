@@ -5,7 +5,7 @@ from dash_iconify import DashIconify
 
 #INTRODUCTION
 intro_div = html.Div([
-    dmc.Image(src="https://i.postimg.cc/Pf9tTKxS/intro-pic.jpg", alt="intro pic", width=750),
+    dmc.Image(src="https://i.postimg.cc/Pf9tTKxS/intro-pic.jpg", alt="intro pic", style={'width': '750px'}),
     html.Br(),
     dmc.Text(children=[
         html.B("Greetings! I'm Manali Jain"), ", hailing from the vibrant city of Mumbai, Maharashtra, India. My academic journey "
@@ -13,7 +13,7 @@ intro_div = html.Div([
         "Data Science for my master's degree. With a professional trajectory spanning over three years, I've donned "
         "various hats, serving as a Business Data Analyst, Data Engineer, and Student Researcher."],
     size="sm",
-    color="white",
+    style={'color': 'white'},
     ),
     dmc.Text(
         "My passion lies in leveraging data science and analytics to catalyze transformative discoveries that resonate with "
@@ -21,12 +21,12 @@ intro_div = html.Div([
         "like life itself, crocheting starts as a jumble of yarn, but with patience and skill, transforms into a masterpiece. "
         "Indeed, life and work are akin to crafting intricate pieces of art, each with its unique beauty waiting to be unveiled.",
     size="sm",
-    color="white",
+    style={'color': 'white'},
     ),
     dmc.Text(
         "Feel free to peruse my resume, explore the diverse projects I've undertaken, and review reference letters from colleagues.",
     size="sm",
-    color="white",
+    style={'color': 'white'},
     ),
     html.Br(),
     dmc.Text(
@@ -35,16 +35,12 @@ intro_div = html.Div([
             html.A("jmanali1996@gmail.com", href='mailto:jmanali1996@gmail.com', target="_blank")
         ],
         size="sm",
-        color="white",
-        weight=900,
-        italic=True,
+        style={'color': 'white', 'italic': True, 'weight': 900},
     ),
     dmc.Text(
         "Socially, I'm active on:",
     size="sm",
-    color="white",
-    weight=900,
-    italic=True,
+    style={'color': 'white', 'italic': True, 'weight': 900},
     ),
     dmc.Group(children=[
         dmc.Group(
@@ -55,7 +51,7 @@ intro_div = html.Div([
                         target="_blank"
                     )
                 ],
-                position="left",
+                align="left",
                 mt="md",
                 mb="xs",
         ),
@@ -67,7 +63,7 @@ intro_div = html.Div([
                         target="_blank"
                     )
                 ],
-                position="left",
+                align="left",
                 mt="md",
                 mb="xs",
         ),
@@ -79,14 +75,14 @@ intro_div = html.Div([
                         target="_blank"
                     )
                 ],
-                position="left",
+                align="left",
                 mt="md",
                 mb="xs",
         ),
         ]
     ),
     ],
-    style={"paddingTop": 10, "paddingRight": 20}                
+    style={"paddingTop": 10, "paddingRight": 20}
 )
 
 #RESUME
@@ -105,7 +101,7 @@ pjcard1 = dmc.Card(
                 dmc.Image(
                     src="https://i.postimg.cc/qvRkYh2x/chatbot.jpg",
                     alt="Wild Bird Fund Chatbot",
-                    width=350
+                    style={'width': 350}
                 ),
                 href="https://wbf-chatbot.onrender.com",
                 target="_blank"
@@ -113,22 +109,22 @@ pjcard1 = dmc.Card(
         ),
         dmc.Group(
             [
-                dmc.Text("Wild Bird Fund Chatbot", weight=500, size='xl', color="white"),
+                dmc.Text("Wild Bird Fund Chatbot", size='xl', style={'color': 'white', 'weight': 500}),
                 html.A(
                     DashIconify(icon="ion:logo-github", width=30),
                     href='https://github.com/jmanali1996/WBF-Chatbot.git',
                     target="_blank"
                 )
             ],
-            position="apart",
+            align="apart",
             mt="md",
             mb="xs",
         ),
         dmc.Text(
-            "A chatbot built for the Wildbirdfund Nyc that can help save the lives of thousands of birds annually and can be used to " 
+            "A chatbot built for the Wildbirdfund Nyc that can help save the lives of thousands of birds annually and can be used to "
             "reduce bird-glass collisions and offer help to injured birds.",
             size="sm",
-            color="white",
+            style={'color': 'white'},
         ),
     ],
     withBorder=True,
@@ -144,7 +140,7 @@ pjcard2 = dmc.Card(
                 dmc.Image(
                     src="https://i.postimg.cc/SKCBhGbv/mmm.png",
                     alt="Multimorbidity Multistate Model",
-                    width=350
+                    style={'width': '350px'}
                 ),
                 href="https://www.slideshare.net/slideshows/multimorbidity-multistate-model/265530051",
                 target="_blank"
@@ -152,22 +148,22 @@ pjcard2 = dmc.Card(
         ),
         dmc.Group(
             [
-                dmc.Text("Multimorbidity Multistate Model", weight=500, size='xl', color="white"),
+                dmc.Text("Multimorbidity Multistate Model", size='xl', style={'color': 'white', 'weight': 500}),
                 html.A(
                     DashIconify(icon="ion:logo-github", width=30),
                     href='https://github.com/jmanali1996/Multimorbidity-Multistate-Model.git',
                     target="_blank"
                 )
             ],
-            position="apart",
+            align="apart",
             mt="md",
             mb="xs",
         ),
         dmc.Text(
-            "My research focused on developing and validating a multi-state model to predict multimorbidity of cardiovascular disease, " 
+            "My research focused on developing and validating a multi-state model to predict multimorbidity of cardiovascular disease, "
             "type 2 diabetes, and chronic kidney diseases.",
             size="sm",
-            color="white",
+            style={'color': 'white'},
         ),
     ],
     withBorder=True,
@@ -177,15 +173,16 @@ pjcard2 = dmc.Card(
 )
 
 all_pjcards = [
-    dmc.Header(
-        height=80,
-        children=[dmc.Text("Data Analysis and AI Projects",
-                           style={"fontSize": 40}, color="white")],
+    dmc.Text(
+        "Data Analysis and AI Projects",
+        style={'height': 80, "fontSize": 40, "color": "white"},
+#        children=[dmc.Text("Data Analysis and AI Projects",
+#                           style={"fontSize": 40, "color": "white"})],
     ),
     dmc.SimpleGrid(
         cols=3,
         spacing="lg",
-        breakpoints=[
+        style=[
             {"maxWidth": 1240, "cols": 2, "spacing": "md"},
             {"maxWidth": 950, "cols": 1, "spacing": "sm"},
         ],
@@ -211,25 +208,25 @@ header = [
 ]
 
 row1 = html.Tr([
-    html.Td("CPRD resource module training test"), 
-    html.Td("Clinical Practice Research Datalink (CPRD)"), 
-    html.Td("2023"), 
+    html.Td("CPRD resource module training test"),
+    html.Td("Clinical Practice Research Datalink (CPRD)"),
+    html.Td("2023"),
     html.Td(
         dbc.Button("View", href="https://drive.google.com/file/d/1N2x9ZjaFxlx1HJsCBGw6R3hfBfW3-Fas/preview", target="_blank")
     )
 ])
 row2 = html.Tr([
-    html.Td("Data Science & Business Analytics Core Module"), 
-    html.Td("Boston Institute of Analytics (BIA)"), 
-    html.Td("2019"), 
+    html.Td("Data Science & Business Analytics Core Module"),
+    html.Td("Boston Institute of Analytics (BIA)"),
+    html.Td("2019"),
     html.Td(
         dbc.Button("View", href="https://drive.google.com/file/d/1c5m_jOSt5l-Mou1GAme4D4BbunrhflhJ/preview", target="_blank")
     )
 ])
 row3 = html.Tr([
-    html.Td("PH125.1x: Data Science: R Basics"), 
-    html.Td("HarvardX"), 
-    html.Td("2019"), 
+    html.Td("PH125.1x: Data Science: R Basics"),
+    html.Td("HarvardX"),
+    html.Td("2019"),
     html.Td(
         dbc.Button("View", href="https://drive.google.com/file/d/1Xs14mvQaM9pLYoNlmOHiRQ0Ecy9lu9PN/preview", target="_blank")
     )
@@ -240,7 +237,7 @@ body = [html.Tbody([row1, row2, row3])]
 cert_div = html.Div([
     dmc.Table(header + body)
     ],
-    style={"paddingTop": 40, "paddingRight": 40}             
+    style={"paddingTop": 40, "paddingRight": 40}
 )
 
 #REFERENCES
@@ -250,24 +247,24 @@ refcard1 = dmc.Card(
             dmc.Image(
                 src="https://i.postimg.cc/X75hLWmz/Charming-Data.webp",
                 alt="Charming Data Community",
-                width=350
+                style={'width':'350px'}
             ),
         ),
         dmc.Group(
             [
-                dmc.Text("Mr. Adam Schroeder", weight=500, size='xl', color="white")
+                dmc.Text("Mr. Adam Schroeder", size='xl', style={'color': 'white', 'weight': 500})
             ],
-            position="apart",
+            align="apart",
             mt="md",
             mb="xs",
         ),
         dmc.Text(
             "Founder",
             size="sm",
-            color="white",
+            style={'color': "white"},
         ),
         html.Br(),
-        dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1odmD1v547BzKomPq7wBrhmAQjuvBWQR6/preview", 
+        dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1odmD1v547BzKomPq7wBrhmAQjuvBWQR6/preview",
                    target="_blank")
     ],
     withBorder=True,
@@ -282,24 +279,24 @@ refcard2 = dmc.Card(
             dmc.Image(
                 src="https://i.postimg.cc/kgq0PZsM/uom.gif",
                 alt="The University of Manchester",
-                width=350
+                style={'width': '350px'}
             ),
         ),
         dmc.Group(
             [
-                dmc.Text("Dr. David Jenkins", weight=500, size='xl', color="white")
+                dmc.Text("Dr. David Jenkins", size='xl', style={'color': 'white', 'weight': 500})
             ],
-            position="apart",
+            align="apart",
             mt="md",
             mb="xs",
         ),
         dmc.Text(
             "Lecturer in Health Data Sciences/Examiner No. 2",
             size="sm",
-            color="white",
+            style={'color': 'white'},
         ),
         html.Br(),
-        dbc.Button("Dissertation Review", href="https://drive.google.com/file/d/1-JSS0bZw5AhBz7097LmVeORylKDizQQM/preview", 
+        dbc.Button("Dissertation Review", href="https://drive.google.com/file/d/1-JSS0bZw5AhBz7097LmVeORylKDizQQM/preview",
                    target="_blank")
     ],
     withBorder=True,
@@ -314,24 +311,24 @@ refcard3 = dmc.Card(
             dmc.Image(
                 src="https://i.postimg.cc/kgq0PZsM/uom.gif",
                 alt="The University of Manchester",
-                width=350
+                style={'width': '350px'}
             ),
         ),
         dmc.Group(
             [
-                dmc.Text("Dr. Glen Martin", weight=500, size='xl', color="white")
+                dmc.Text("Dr. Glen Martin", size='xl', style={'color': 'white', 'weight': 500})
             ],
-            position="apart",
+            align="apart",
             mt="md",
             mb="xs",
         ),
         dmc.Text(
             "Senior Lecturer in Health Data Sciences/Examiner No. 1/Supervisor",
             size="sm",
-            color="white",
+            style={'color': 'white'},
         ),
         html.Br(),
-        dbc.Button("Dissertation Review", href="https://drive.google.com/file/d/1dYuKRtgVVY8FOvKf9cAZznKv5u-ytazD/preview", 
+        dbc.Button("Dissertation Review", href="https://drive.google.com/file/d/1dYuKRtgVVY8FOvKf9cAZznKv5u-ytazD/preview",
                    target="_blank")
     ],
     withBorder=True,
@@ -346,24 +343,24 @@ refcard4 = dmc.Card(
             dmc.Image(
                 src="https://i.postimg.cc/BnBP9JkY/Chistats.jpg",
                 alt="Chistats Labs Pvt. Ltd.",
-                width=350
+                style={'width': '350px'}
             ),
         ),
         dmc.Group(
             [
-                dmc.Text("Dr. Yogesh Karpate", weight=500, size='xl', color="white")
+                dmc.Text("Dr. Yogesh Karpate", size='xl', style={'color': 'white', 'weight': 500})
             ],
-            position="apart",
+            align="apart",
             mt="md",
             mb="xs",
         ),
         dmc.Text(
             "Founder/Chief Technology Officer",
             size="sm",
-            color="white",
+            style={'color': 'white'},
         ),
         html.Br(),
-        dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview", 
+        dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview",
                    target="_blank")
     ],
     withBorder=True,
@@ -378,24 +375,24 @@ refcard5 = dmc.Card(
             dmc.Image(
                 src="https://i.postimg.cc/rwRcxjCS/Hotmuggs.jpg",
                 alt="Hot Stuffs Pvt. Ltd.",
-                width=350
+                style={'width': '350px'}
             ),
         ),
         dmc.Group(
             [
-                dmc.Text("Mr. Rishi Jain", weight=500, size='xl', color="white")
+                dmc.Text("Mr. Rishi Jain", size='xl', style={'color': 'white', 'weight': 500})
             ],
-            position="apart",
+            align="apart",
             mt="md",
             mb="xs",
         ),
         dmc.Text(
             "Chief Marketing Officer",
             size="sm",
-            color="white",
+            style={'color': 'white'},
         ),
         html.Br(),
-        dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview", 
+        dbc.Button("Reference Letter", href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview",
                    target="_blank")
     ],
     withBorder=True,
@@ -405,15 +402,16 @@ refcard5 = dmc.Card(
 )
 
 all_refcards = [
-    dmc.Header(
-        height=80,
-        children=[dmc.Text("Recommendation notes and letters", 
-                           style={"fontSize": 40}, color="white")],
+    dmc.Text(
+        "Recommendation notes and letters",
+        style={'height': 80, "fontSize": 40, "color": "white"},
+#        children=[dmc.Text("Recommendation notes and letters",
+#                           style={"fontSize": 40, 'color': 'white'})],
     ),
     dmc.SimpleGrid(
         cols=3,
         spacing="lg",
-        breakpoints=[
+        style=[
             {"maxWidth": 1240, "cols": 2, "spacing": "md"},
             {"maxWidth": 950, "cols": 1, "spacing": "sm"},
         ],
@@ -432,17 +430,17 @@ app = Dash(__name__, external_stylesheets=[dbc.themes.SPACELAB, dbc.icons.BOOTST
 server = app.server
 app.layout = dmc.MantineProvider(
     theme={"colorScheme": "dark"},
-    withGlobalStyles=True,
+    withGlobalClasses=True,
     children=[
             dmc.Tabs(
         [
             dmc.TabsList(
                 [
-                    dmc.Tab("Get to know me", value="introduction"),
-                    dmc.Tab("Resumé", value="resume"),
-                    dmc.Tab("Projects", value="projects"),
-                    dmc.Tab("Certificates", value="certificates"),
-                    dmc.Tab("Testimonials", value="references"),
+                    dmc.TabsTab("Get to know me", value="introduction"),
+                    dmc.TabsTab("Resumé", value="resume"),
+                    dmc.TabsTab("Projects", value="projects"),
+                    dmc.TabsTab("Certificates", value="certificates"),
+                    dmc.TabsTab("Testimonials", value="references"),
                 ], style={"paddingRight": 50, "paddingTop": 15}
             ),
             dmc.TabsPanel(intro_div, value="introduction", pb="xs"),
