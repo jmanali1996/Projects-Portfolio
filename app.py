@@ -428,8 +428,9 @@ all_refcards = [
 #LAYOUT
 app = Dash(__name__, external_stylesheets=[dbc.themes.SPACELAB, dbc.icons.BOOTSTRAP])
 server = app.server
+ct = {"colorScheme": "dark"}
 app.layout = dmc.MantineProvider(
-    theme={"colorScheme": "dark"},
+    theme=ct,
     withGlobalClasses=True,
     children=[
             dmc.Tabs(
