@@ -49,7 +49,7 @@ intro_div = html.Div([
                     DashIconify(icon="mdi:linkedin", width=25), 
                     dmc.Text("LinkedIn", size='sm')
                 ],
-                href='www.linkedin.com/in/manalijain09',
+                href='https://www.linkedin.com/in/manalijain09',
                 target="_blank"
             )
         ],
@@ -66,7 +66,7 @@ intro_div = html.Div([
                 href='https://github.com/jmanali1996',
                 target="_blank"
             )
-            ], 
+        ], 
             align="left",
             mt="md",
             mb="xs",
@@ -80,7 +80,7 @@ intro_div = html.Div([
                 href='https://instagram.com/mjain09',
                 target="_blank"
             )
-            ],
+        ],
             align="left",
             mt="md",
             mb="xs",
