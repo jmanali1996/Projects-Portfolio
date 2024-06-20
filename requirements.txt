@@ -4,10 +4,9 @@ certifi
 charset-normalizer
 click
 dash
-dash-bootstrap-components
 dash-html-components
 dash-iconify
-dash-mantine-components
+dash-mantine-components==0.14.0
 dash-table
 gunicorn
 idna
