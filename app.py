@@ -93,7 +93,7 @@ intro_div = html.Div([
 
 # RESUME
 resume_div = html.Div([
-    html.Iframe(src="https://drive.google.com/file/d/1MtSStFAzQuNVBn1RAJfW4xmp8AiAsuD4/preview",
+    html.Iframe(src="https://drive.google.com/file/d/1tafly6mUwfamh_-T_OovhCFQzV1RVo_K/preview",
                 width="1000", height="1200")
     ],
     style={"paddingTop": 20}
