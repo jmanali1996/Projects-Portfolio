@@ -109,7 +109,7 @@ pjcard1 = dmc.Card(
                     alt="Wild Bird Fund Chatbot",
                     style={'width': 400}
                 ),
-                href="https://wbf-chatbot.onrender.com",
+                href="https://wbf-chatbot.toystack.dev",
                 target="_blank"
             ),
         ),
