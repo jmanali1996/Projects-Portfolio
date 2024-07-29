@@ -105,6 +105,45 @@ pjcard1 = dmc.Card(
         dmc.CardSection(
             dmc.Anchor(
                 dmc.Image(
+                    src="https://i.postimg.cc/cC8dcbns/columbia-wildfires.webp",
+                    alt="Colombian Wildfires",
+                    style={'width': 400}
+                ),
+                href="https://drive.google.com/file/d/1Bso3ZRwID-yydYzEs8V59fSDxu5fFunx/preview",
+                target="_blank"
+            ),
+        ),
+        dmc.Group(
+            [
+                dmc.Text("Colombian Wildfires", size='xl', style={'color': 'white', 'weight': 500}),
+                html.A(
+                    DashIconify(icon="ion:logo-github", width=30),
+                    href='https://github.com/jmanali1996/Colombian-Wildfires.git',
+                    target="_blank"
+                )
+            ],
+            justify="space-between",
+            mt="md",
+            mb="xs",
+        ),
+        dmc.Text(
+            "A dashboard visualizes fire incidents in Colombia from 2000 to 2024, with filters, bar graphs, and an animated map. It helps "
+            "users explore trends, identify high-risk areas, and understand the distribution of fires.",
+            size="sm",
+            style={'color': 'white'},
+        ),
+    ],
+    withBorder=True,
+    shadow="sm",
+    radius="md",
+    w=400,
+)
+
+pjcard2 = dmc.Card(
+    children=[
+        dmc.CardSection(
+            dmc.Anchor(
+                dmc.Image(
                     src="https://i.postimg.cc/qvRkYh2x/chatbot.jpg",
                     alt="Wild Bird Fund Chatbot",
                     style={'width': 400}
@@ -127,7 +166,7 @@ pjcard1 = dmc.Card(
             mb="xs",
         ),
         dmc.Text(
-            "A chatbot built for the Wildbirdfund Nyc that can help save the lives of thousands of birds annually and can be used to "
+            "An AI chatbot built for the Wildbirdfund Nyc that can help save the lives of thousands of birds annually and can be used to "
             "reduce bird-glass collisions and offer help to injured birds.",
             size="sm",
             style={'color': 'white'},
@@ -139,7 +178,7 @@ pjcard1 = dmc.Card(
     w=400,
 )
 
-pjcard2 = dmc.Card(
+pjcard3 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Anchor(
@@ -189,7 +228,8 @@ all_pjcards = [
         verticalSpacing="md",
         children=[
             html.Div(pjcard1),
-            html.Div(pjcard2)
+            html.Div(pjcard2),
+            html.Div(pjcard3)
         ],
     )
 ]
