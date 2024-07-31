@@ -99,15 +99,93 @@ resume_div = html.Div([
     style={"paddingTop": 20}
 )
 
-# PROJECTS
+# PROJECTS 
 pjcard1 = dmc.Card(
+    children=[
+        dmc.CardSection(
+            dmc.Anchor(
+                dmc.Image(
+                    src="https://i.postimg.cc/gJ73Mfcw/Stop-war.png",
+                    alt="Civilian Conflicts",
+                    style={'height': '250px', 'width': '400px'}
+                ),
+                href="https://drive.google.com/file/d/1CEVdcJOXywkzH2fslff8S4SqcMtHJuJL/preview",
+                target="_blank"
+            ),
+        ),
+        dmc.Group(
+            [
+                dmc.Text("Civilian Conflicts", size='xl', style={'color': 'white', 'weight': 500}),
+                html.A(
+                    DashIconify(icon="ion:logo-github", width=30),
+                    href='https://github.com/jmanali1996/Civilian-Conflicts.git',
+                    target="_blank"
+                )
+            ],
+            justify="space-between",
+            mt="md",
+            mb="xs",
+        ),
+        dmc.Text(
+            "A multi-page dashboard visualizing global conflict-related fatalities. It highlights conflict details, causation, "
+            "distribution, and overall impact. Data sourced from the Uppsala Conflict Data Program (UCDP).",
+            size="sm",
+            style={'color': 'white'},
+        ),
+    ],
+    withBorder=True,
+    shadow="sm",
+    radius="md",
+    w=400
+)
+
+pjcard2 = dmc.Card(
+    children=[
+        dmc.CardSection(
+            dmc.Anchor(
+                dmc.Image(
+                    src="https://i.postimg.cc/vmJttstq/artistvsart.webp",
+                    alt="ARTISTvsAI",
+                    style={'height': '250px', 'width': '400px'}
+                ),
+                href="https://drive.google.com/file/d/1GfFte2bt-sWwY6nz-j8ATkhNgm62Emy3/preview",
+                target="_blank"
+            ),
+        ),
+        dmc.Group(
+            [
+                dmc.Text("ARTISTvsAI", size='xl', style={'color': 'white', 'weight': 500}),
+                html.A(
+                    DashIconify(icon="ion:logo-github", width=30),
+                    href='https://github.com/jmanali1996/ARTISTvsAI.git',
+                    target="_blank"
+                )
+            ],
+            justify="space-between",
+            mt="md",
+            mb="xs",
+        ),
+        dmc.Text(
+            "This app supports the ARTIST vs AI campaign using neural style transfer principles by Mr. Shafik Quoraishee and "
+            "frontend design by Ms. Manali Jain to stylize images and compare similarities.",
+            size="sm",
+            style={'color': 'white'},
+        ),
+    ],
+    withBorder=True,
+    shadow="sm",
+    radius="md",
+    w=400
+)
+
+pjcard3 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Anchor(
                 dmc.Image(
                     src="https://i.postimg.cc/cC8dcbns/columbia-wildfires.webp",
                     alt="Colombian Wildfires",
-                    style={'width': 400}
+                    style={'height': '250px', 'width': '400px'}
                 ),
                 href="https://drive.google.com/file/d/1Bso3ZRwID-yydYzEs8V59fSDxu5fFunx/preview",
                 target="_blank"
@@ -136,17 +214,17 @@ pjcard1 = dmc.Card(
     withBorder=True,
     shadow="sm",
     radius="md",
-    w=400,
+    w=400
 )
 
-pjcard2 = dmc.Card(
+pjcard4 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Anchor(
                 dmc.Image(
                     src="https://i.postimg.cc/qvRkYh2x/chatbot.jpg",
                     alt="Wild Bird Fund Chatbot",
-                    style={'width': 400}
+                    style={'height': '250px', 'width': '400px'}
                 ),
                 href="https://drive.google.com/file/d/1eRbEroHlh76xWbo9j1VjMxorANPhGr6K/preview",
                 target="_blank"
@@ -175,17 +253,17 @@ pjcard2 = dmc.Card(
     withBorder=True,
     shadow="sm",
     radius="md",
-    w=400,
+    w=400
 )
 
-pjcard3 = dmc.Card(
+pjcard5 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Anchor(
                 dmc.Image(
                     src="https://i.postimg.cc/SKCBhGbv/mmm.png",
                     alt="Multimorbidity Multistate Model",
-                    style={'width': 400}
+                    style={'height': '250px', 'width': '400px'}
                 ),
                 href="https://www.slideshare.net/slideshows/multimorbidity-multistate-model/265530051",
                 target="_blank"
@@ -214,7 +292,7 @@ pjcard3 = dmc.Card(
     withBorder=True,
     shadow="sm",
     radius="md",
-    w=400,
+    w=400
 )
 
 all_pjcards = [
@@ -229,7 +307,9 @@ all_pjcards = [
         children=[
             html.Div(pjcard1),
             html.Div(pjcard2),
-            html.Div(pjcard3)
+            html.Div(pjcard3),
+            html.Div(pjcard4),
+            html.Div(pjcard5)
         ],
     )
 ]
