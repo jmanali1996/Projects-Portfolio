@@ -5,7 +5,7 @@ from dash import html, Output, Input, callback
 
 # INTRODUCTION
 intro_div = html.Div([
-    dmc.Image(src="https://i.postimg.cc/Pf9tTKxS/intro-pic.jpg", alt="intro pic", style={'width': '750px'}),
+    dmc.Image(src="https://i.postimg.cc/Pf9tTKxS/intro-pic.jpg", alt="intro pic", style={'width': '100%', 'max-width': '750px'}),
     html.Br(),
     dmc.Text(children=[
         html.B("Greetings! I'm Manali Jain"), ", hailing from the vibrant city of Mumbai, Maharashtra, India. My academic journey "
@@ -107,7 +107,7 @@ pjcard1 = dmc.Card(
                 dmc.Image(
                     src="https://i.postimg.cc/gJ73Mfcw/Stop-war.png",
                     alt="Civilian Conflicts",
-                    style={'height': '250px', 'width': '400px'}
+                    style={'height': '250px', 'width': '100%', 'max-width': '400px'}
                 ),
                 href="https://drive.google.com/file/d/1CEVdcJOXywkzH2fslff8S4SqcMtHJuJL/preview",
                 target="_blank"
@@ -130,13 +130,20 @@ pjcard1 = dmc.Card(
             "A multi-page dashboard visualizing global conflict-related fatalities. It highlights conflict details, causation, "
             "distribution, and overall impact. Data sourced from the Uppsala Conflict Data Program (UCDP).",
             size="sm",
-            style={'color': 'white'},
+            style={'color': 'white'}
         ),
+        dmc.Text(
+            children=[
+                html.I("*Tap the image to view the walkthrough video")
+            ],
+            size="xs",
+            style={'color': "white", "paddingTop": 5}
+        )
     ],
     withBorder=True,
     shadow="sm",
     radius="md",
-    w=400
+    style={'width': '100%', 'max-width': '400px'}
 )
 
 pjcard2 = dmc.Card(
@@ -146,7 +153,7 @@ pjcard2 = dmc.Card(
                 dmc.Image(
                     src="https://i.postimg.cc/vmJttstq/artistvsart.webp",
                     alt="ARTISTvsAI",
-                    style={'height': '250px', 'width': '400px'}
+                    style={'height': '250px', 'width': '100%', 'max-width': '400px'}
                 ),
                 href="https://drive.google.com/file/d/1GfFte2bt-sWwY6nz-j8ATkhNgm62Emy3/preview",
                 target="_blank"
@@ -169,13 +176,20 @@ pjcard2 = dmc.Card(
             "This app supports the ARTIST vs AI campaign using neural style transfer principles by Mr. Shafik Quoraishee and "
             "frontend design by Ms. Manali Jain to stylize images and compare similarities.",
             size="sm",
-            style={'color': 'white'},
+            style={'color': 'white'}
         ),
+        dmc.Text(
+            children=[
+                html.I("*Tap the image to view the walkthrough video")
+            ],
+            size="xs",
+            style={'color': "white", "paddingTop": 5}
+        )
     ],
     withBorder=True,
     shadow="sm",
     radius="md",
-    w=400
+    style={'width': '100%', 'max-width': '400px'}
 )
 
 pjcard3 = dmc.Card(
@@ -185,7 +199,7 @@ pjcard3 = dmc.Card(
                 dmc.Image(
                     src="https://i.postimg.cc/cC8dcbns/columbia-wildfires.webp",
                     alt="Colombian Wildfires",
-                    style={'height': '250px', 'width': '400px'}
+                    style={'height': '250px', 'width': '100%', 'max-width': '400px'}
                 ),
                 href="https://drive.google.com/file/d/1Bso3ZRwID-yydYzEs8V59fSDxu5fFunx/preview",
                 target="_blank"
@@ -208,13 +222,20 @@ pjcard3 = dmc.Card(
             "A dashboard visualizes fire incidents in Colombia from 2000 to 2024, with filters, bar graphs, and an animated map. It helps "
             "users explore trends, identify high-risk areas, and understand the distribution of fires.",
             size="sm",
-            style={'color': 'white'},
+            style={'color': 'white'}
         ),
+        dmc.Text(
+            children=[
+                html.I("*Tap the image to view the walkthrough video")
+            ],
+            size="xs",
+            style={'color': "white", "paddingTop": 5}
+        )
     ],
     withBorder=True,
     shadow="sm",
     radius="md",
-    w=400
+    style={'width': '100%', 'max-width': '400px'}
 )
 
 pjcard4 = dmc.Card(
@@ -224,7 +245,7 @@ pjcard4 = dmc.Card(
                 dmc.Image(
                     src="https://i.postimg.cc/qvRkYh2x/chatbot.jpg",
                     alt="Wild Bird Fund Chatbot",
-                    style={'height': '250px', 'width': '400px'}
+                    style={'height': '250px', 'width': '100%', 'max-width': '400px'}
                 ),
                 href="https://drive.google.com/file/d/1eRbEroHlh76xWbo9j1VjMxorANPhGr6K/preview",
                 target="_blank"
@@ -247,13 +268,20 @@ pjcard4 = dmc.Card(
             "An AI chatbot built for the Wildbirdfund Nyc that can help save the lives of thousands of birds annually and can be used to "
             "reduce bird-glass collisions and offer help to injured birds.",
             size="sm",
-            style={'color': 'white'},
+            style={'color': 'white'}
         ),
+        dmc.Text(
+            children=[
+                html.I("*Tap the image to view the walkthrough video")
+            ],
+            size="xs",
+            style={'color': "white", "paddingTop": 5}
+        )
     ],
     withBorder=True,
     shadow="sm",
     radius="md",
-    w=400
+    style={'width': '100%', 'max-width': '400px'}
 )
 
 pjcard5 = dmc.Card(
@@ -263,7 +291,7 @@ pjcard5 = dmc.Card(
                 dmc.Image(
                     src="https://i.postimg.cc/SKCBhGbv/mmm.png",
                     alt="Multimorbidity Multistate Model",
-                    style={'height': '250px', 'width': '400px'}
+                    style={'height': '250px', 'width': '100%', 'max-width': '400px'}
                 ),
                 href="https://www.slideshare.net/slideshows/multimorbidity-multistate-model/265530051",
                 target="_blank"
@@ -286,33 +314,37 @@ pjcard5 = dmc.Card(
             "My research focused on developing and validating a multi-state model to predict multimorbidity of cardiovascular disease, "
             "type 2 diabetes, and chronic kidney diseases.",
             size="sm",
-            style={'color': 'white'},
+            style={'color': 'white'}
         ),
+        dmc.Text(
+            children=[
+                html.I("*Tap the image to view the presentation")
+            ],
+            size="xs",
+            style={'color': "white", "paddingTop": 5}
+        )
     ],
     withBorder=True,
     shadow="sm",
     radius="md",
-    w=400
+    style={'width': '100%', 'max-width': '400px'}
 )
 
-all_pjcards = [
-    dmc.Text(
-        "Data Analysis and AI Projects", 
-        style={'height': 80, "fontSize": 40, "color": "white"},
-    ),
-    dmc.SimpleGrid(
-        cols=3,
-        spacing="md",
-        verticalSpacing="md",
-        children=[
-            html.Div(pjcard1),
-            html.Div(pjcard2),
-            html.Div(pjcard3),
-            html.Div(pjcard4),
-            html.Div(pjcard5)
-        ],
-    )
-]
+all_pjcards = html.Div(
+    [
+        dmc.Grid(
+            gutter="sm",
+            children=[
+                dmc.GridCol(html.Div(pjcard1), span=4),
+                dmc.GridCol(html.Div(pjcard2), span=4),
+                dmc.GridCol(html.Div(pjcard3), span=4),
+                dmc.GridCol(html.Div(pjcard4), span=4),
+                dmc.GridCol(html.Div(pjcard5), span=4)
+            ]
+        )
+    ],
+    style={"paddingTop": 20}
+)
 
 # CERTIFICATES
 head = dmc.TableThead(
@@ -377,8 +409,9 @@ row3 = dmc.TableTr([
 
 body = dmc.TableTbody([row1, row2, row3]) 
 
-cert_div = html.Div([
-    dmc.Table([head, body], verticalSpacing="md", highlightOnHover=True, style={"fontSize": 18})
+cert_div = html.Div(
+    [
+        dmc.Table([head, body], verticalSpacing="md", highlightOnHover=True, style={"fontSize": 18})
     ],
     style={"paddingTop": 30, "paddingRight": 40}
 )
@@ -386,222 +419,294 @@ cert_div = html.Div([
 # REFERENCES
 refcard1 = dmc.Card(
     children=[
-        dmc.CardSection(
-            dmc.Image(
-                src="https://i.postimg.cc/X75hLWmz/Charming-Data.webp",
-                alt="Charming Data Community",
-                style={'height': '200px', 'width':'400px'}
-            ),
-        ),
-        dmc.Group(
-            [
-                dmc.Text("Mr. Adam Schroeder", size='xl', style={'color': 'white', 'weight': 500})
-            ],
-            align="apart",
-            mt="md",
-            mb="xs",
-        ),
-        dmc.Text(
-            "Founder",
-            size="sm",
-            style={'color': "white"},
-        ),
-        html.Br(),
-        dmc.Button(
-            dmc.Anchor(
-                "Reference Letter", 
-                href="https://drive.google.com/file/d/1odmD1v547BzKomPq7wBrhmAQjuvBWQR6/preview",
-                target="_blank"
-            ),
-            color = "gray",
-            style = {"position": "absolute", "bottom": 10}
+        dmc.Grid(
+            gutter="sm",
+            children=[
+                dmc.GridCol(
+                    dmc.CardSection(
+                        dmc.Anchor(
+                            dmc.Image(
+                                src="https://i.postimg.cc/X75hLWmz/Charming-Data.webp",
+                                alt="Charming Data Community",
+                                style={'height': '200px', 'width':'400px'}
+                            ),
+                            href="https://charming-data.circle.so",
+                            target="_blank"
+                        )
+                    ),
+                    span=4
+                ),
+                dmc.GridCol(
+                    dmc.Stack([
+                        dmc.Text("Mr. Adam Schroeder", size='xl', style={'color': 'white', 'weight': 500}),
+                        dmc.Text(
+                            "Founder",
+                            size="sm",
+                            style={'color': "white"},
+                        ),
+                        dmc.Text(
+                            children=[
+                                html.I("*Tap the logo to visit the website")
+                            ],
+                            size="xs",
+                            style={'color': "white"}
+                        ),
+                        dmc.Button(
+                            dmc.Anchor(
+                                "Recommendation Letter", 
+                                href="https://drive.google.com/file/d/1odmD1v547BzKomPq7wBrhmAQjuvBWQR6/preview",
+                                target="_blank"
+                            ),
+                            color = "gray",
+                            style = {"position": "absolute", "bottom": 20}
+                        )
+                    ]),
+                    span=6
+                )
+            ]
         )
     ],
     withBorder=True,
     shadow="sm",
     radius="md",
-    w=400,
-    h=350
+    style={'width': '1230px'}
 )
 
 refcard2 = dmc.Card(
     children=[
-        dmc.CardSection(
-            dmc.Image(
-                src="https://i.postimg.cc/kgq0PZsM/uom.gif",
-                alt="The University of Manchester",
-                style={'height': '200px', 'width': '400px'}
-            ),
-        ),
-        dmc.Group(
-            [
-                dmc.Text("Dr. David Jenkins", size='xl', style={'color': 'white', 'weight': 500})
-            ],
-            align="apart",
-            mt="md",
-            mb="xs",
-        ),
-        dmc.Text(
-            "Lecturer in Health Data Sciences / Examiner No. 2",
-            size="sm",
-            style={'color': 'white'},
-        ),
-        html.Br(),
-        dmc.Button(
-            dmc.Anchor(
-                "Dissertation Review", 
-                href="https://drive.google.com/file/d/1-JSS0bZw5AhBz7097LmVeORylKDizQQM/preview",
-               target="_blank"
-            ),
-            color = "gray",
-            style = {"position": "absolute", "bottom": 10}
-        )    
+        dmc.Grid(
+            gutter="sm",
+            children=[
+                dmc.GridCol(
+                    dmc.CardSection(
+                        dmc.Anchor(
+                            dmc.Image(
+                                src="https://i.postimg.cc/kgq0PZsM/uom.gif",
+                                alt="The University of Manchester",
+                                style={'height': '200px', 'width': '400px'}
+                            ),
+                            href="https://www.manchester.ac.uk",
+                            target="_blank"
+                        )
+                    ),
+                    span=4
+                ),
+                dmc.GridCol(
+                    dmc.Stack([
+                        dmc.Text("Dr. David Jenkins", size='xl', style={'color': 'white', 'weight': 500}),
+                        dmc.Text(
+                            "Lecturer in Health Data Sciences / Examiner No. 2",
+                            size="sm",
+                            style={'color': "white"},
+                        ),
+                        dmc.Text(
+                            children=[
+                                html.I("*Tap the logo to visit the website")
+                            ],
+                            size="xs",
+                            style={'color': "white"}
+                        ),
+                        dmc.Button(
+                            dmc.Anchor(
+                                "Dissertation Review", 
+                                href="https://drive.google.com/file/d/1-JSS0bZw5AhBz7097LmVeORylKDizQQM/preview",
+                                target="_blank"
+                            ),
+                            color = "gray",
+                            style = {"position": "absolute", "bottom": 20}
+                        )
+                    ]),
+                    span=6
+                )
+            ]
+        )
     ],
     withBorder=True,
     shadow="sm",
     radius="md",
-    w=400,
-    h=350
+    style={'width': '1230px'}
 )
 
 refcard3 = dmc.Card(
     children=[
-        dmc.CardSection(
-            dmc.Image(
-                src="https://i.postimg.cc/kgq0PZsM/uom.gif",
-                alt="The University of Manchester",
-                style={'height': '200px', 'width': '400px'}
-            ),
-        ),
-        dmc.Group(
-            [
-                dmc.Text("Dr. Glen Martin", size='xl', style={'color': 'white', 'weight': 500})
-            ],
-            align="apart",
-            mt="md",
-            mb="xs",
-        ),
-        dmc.Text(
-            "Senior Lecturer in Health Data Sciences / Examiner No. 1 / Supervisor",
-            size="sm",
-            style={'color': 'white'},
-        ),
-        html.Br(),
-        dmc.Button(
-            dmc.Anchor(
-                "Dissertation Review", 
-                href="https://drive.google.com/file/d/1dYuKRtgVVY8FOvKf9cAZznKv5u-ytazD/preview",
-                target="_blank"
-            ),
-            color = "gray",
-            style = {"position": "absolute", "bottom": 10}
+        dmc.Grid(
+            gutter="sm",
+            children=[
+                dmc.GridCol(
+                    dmc.CardSection(
+                        dmc.Anchor(
+                            dmc.Image(
+                                src="https://i.postimg.cc/kgq0PZsM/uom.gif",
+                                alt="The University of Manchester",
+                                style={'height': '200px', 'width': '400px'}
+                            ),
+                            href="https://www.manchester.ac.uk",
+                            target="_blank"
+                        )
+                    ),
+                    span=4
+                ),
+                dmc.GridCol(
+                    dmc.Stack([
+                        dmc.Text("Dr. Glen Martin", size='xl', style={'color': 'white', 'weight': 500}),
+                        dmc.Text(
+                            "Senior Lecturer in Health Data Sciences / Examiner No. 1 / Supervisor",
+                            size="sm",
+                            style={'color': "white"},
+                        ),
+                        dmc.Text(
+                            children=[
+                                html.I("*Tap the logo to visit the website")
+                            ],
+                            size="xs",
+                            style={'color': "white"}
+                        ),
+                        dmc.Button(
+                            dmc.Anchor(
+                                "Dissertation Review", 
+                                href="https://drive.google.com/file/d/1dYuKRtgVVY8FOvKf9cAZznKv5u-ytazD/preview",
+                                target="_blank"
+                            ),
+                            color = "gray",
+                            style = {"position": "absolute", "bottom": 20}
+                        )
+                    ]),
+                    span=6
+                )
+            ]
         )
     ],
     withBorder=True,
     shadow="sm",
     radius="md",
-    w=400,
-    h=350
+    style={'width': '1230px'}
 )
 
 refcard4 = dmc.Card(
     children=[
-        dmc.CardSection(
-            dmc.Image(
-                src="https://i.postimg.cc/d1knGfhS/Chistats.jpg",
-                alt="Chistats Labs Pvt. Ltd.",
-                style={'height': '200px', 'width': '400px'}
-            ),
-        ),
-        dmc.Group(
-            [
-                dmc.Text("Dr. Yogesh Karpate", size='xl', style={'color': 'white', 'weight': 500})
-            ],
-            align="apart",
-            mt="md",
-            mb="xs",
-        ),
-        dmc.Text(
-            "Founder/Chief Technology Officer",
-            size="sm",
-            style={'color': 'white'},
-        ),
-        html.Br(),
-        dmc.Button(
-            dmc.Anchor(
-                "Reference Letter", 
-                href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview",
-                target="_blank"
-            ),
-            color = "gray",
-            style = {"position": "absolute", "bottom": 10}
+        dmc.Grid(
+            gutter="sm",
+            children=[
+                dmc.GridCol(
+                    dmc.CardSection(
+                        dmc.Anchor(
+                            dmc.Image(
+                                src="https://i.postimg.cc/d1knGfhS/Chistats.jpg",
+                                alt="Chistats Labs Pvt. Ltd.",
+                                style={'height': '200px', 'width': '400px'}
+                            ),
+                            href="https://chistats.ai",
+                            target="_blank"
+                        )
+                    ),
+                    span=4
+                ),
+                dmc.GridCol(
+                    dmc.Stack([
+                        dmc.Text("Dr. Yogesh Karpate", size='xl', style={'color': 'white', 'weight': 500}),
+                        dmc.Text(
+                            "Founder / Chief Technology Officer",
+                            size="sm",
+                            style={'color': "white"},
+                        ),
+                        dmc.Text(
+                            children=[
+                                html.I("*Tap the logo to visit the website")
+                            ],
+                            size="xs",
+                            style={'color': "white"}
+                        ),
+                        dmc.Button(
+                            dmc.Anchor(
+                                "Recommendation Letter", 
+                                href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview",
+                                target="_blank"
+                            ),
+                            color = "gray",
+                            style = {"position": "absolute", "bottom": 20}
+                        )
+                    ]),
+                    span=6
+                )
+            ]
         )
     ],
     withBorder=True,
     shadow="sm",
     radius="md",
-    w=400,
-    h=350
+    style={'width': '1230px'}
 )
 
 refcard5 = dmc.Card(
     children=[
-        dmc.CardSection(
-            dmc.Image(
-                src="https://i.postimg.cc/rwRcxjCS/Hotmuggs.jpg",
-                alt="Hot Stuffs Pvt. Ltd.",
-                style={'height': '200px', 'width': '400px'}
-            ),
-        ),
-        dmc.Group(
-            [
-                dmc.Text("Mr. Rishi Jain", size='xl', style={'color': 'white', 'weight': 500})
-            ],
-            align="apart",
-            mt="md",
-            mb="xs",
-        ),
-        dmc.Text(
-            "Chief Marketing Officer",
-            size="sm",
-            style={'color': 'white'},
-        ),
-        html.Br(),
-        dmc.Button(
-            dmc.Anchor(
-                "Reference Letter", 
-                href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview",
-                target="_blank"
-            ),
-            color = "gray",
-            style = {"position": "absolute", "bottom": 10}
+        dmc.Grid(
+            gutter="sm",
+            children=[
+                dmc.GridCol(
+                    dmc.CardSection(
+                        dmc.Anchor(
+                            dmc.Image(
+                                src="https://i.postimg.cc/rwRcxjCS/Hotmuggs.jpg",
+                                alt="Hot Stuffs Pvt. Ltd.",
+                                style={'height': '200px', 'width': '400px'}
+                            ),
+                            href="https://hotmuggs.com",
+                            target="_blank"
+                        )
+                    ),
+                    span=4
+                ),
+                dmc.GridCol(
+                    dmc.Stack([
+                        dmc.Text("Mr. Rishi Jain", size='xl', style={'color': 'white', 'weight': 500}),
+                        dmc.Text(
+                            "Chief Marketing Officer",
+                            size="sm",
+                            style={'color': "white"},
+                        ),
+                        dmc.Text(
+                            children=[
+                                html.I("*Tap the logo to visit the website")
+                            ],
+                            size="xs",
+                            style={'color': "white"}
+                        ),
+                        dmc.Button(
+                            dmc.Anchor(
+                                "Recommendation Letter", 
+                                href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview",
+                                target="_blank"
+                            ),
+                            color = "gray",
+                            style = {"position": "absolute", "bottom": 20}
+                        )
+                    ]),
+                    span=6
+                )
+            ]
         )
     ],
     withBorder=True,
     shadow="sm",
     radius="md",
-    w=400,
-    h=350
+    style={'width': '1230px'}
 )
 
-all_refcards = [
-    dmc.Text(
-        "Recommendation notes and letters",
-        style={'height': 80, "fontSize": 40, "color": "white"},
-    ),
-    dmc.SimpleGrid(
-        cols=3,
-        spacing="md",
-        verticalSpacing="md",
-        children=[
-            html.Div(refcard1),
-            html.Div(refcard2),
-            html.Div(refcard3),
-            html.Div(refcard4),
-            html.Div(refcard5)
-        ],
-    )
-]
+all_refcards = html.Div(
+    [
+        dmc.Grid(
+            gutter="sm",
+            children=[
+                dmc.GridCol(html.Div(refcard1)),
+                dmc.GridCol(html.Div(refcard2)),
+                dmc.GridCol(html.Div(refcard3)),
+                dmc.GridCol(html.Div(refcard4)),
+                dmc.GridCol(html.Div(refcard5))
+            ]
+        )
+    ],
+    style={"paddingTop": 20}
+)
 
 # LAYOUT
 app = Dash(__name__)
