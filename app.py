@@ -5,7 +5,7 @@ from dash import html, Output, Input, callback
 
 # INTRODUCTION
 intro_div = html.Div([
-    dmc.Image(src="https://i.postimg.cc/Pf9tTKxS/intro-pic.jpg", alt="intro pic", style={'width': '100%', 'max-width': '750px'}),
+    dmc.Image(src="https://i.postimg.cc/Pf9tTKxS/intro-pic.jpg", alt="intro pic", style={'width': '50%', 'max-width': '750px', 'marginLeft': 'auto', 'marginRight': 'auto'}),
     html.Br(),
     dmc.Text(children=[
         html.B("Greetings! I'm Manali Jain"), ", hailing from the vibrant city of Mumbai, Maharashtra, India. My academic journey "
@@ -42,53 +42,52 @@ intro_div = html.Div([
     size="sm",
     style={'color': 'white', 'italic': True, 'weight': 900},
     ),
-    dmc.Group(children=[
-        dmc.Group([
-            html.A(
-                children=[
-                    DashIconify(icon="mdi:linkedin", width=25), 
-                    dmc.Text("LinkedIn", size='sm')
-                ],
-                href='https://www.linkedin.com/in/manalijain09',
-                target="_blank"
-            )
-        ],
-            align="left",
+    dmc.Group(
+        justify="center", 
+        children=[
+            dmc.Group([
+                html.A(
+                    children=[
+                        DashIconify(icon="mdi:linkedin", width=25), 
+                        dmc.Text("LinkedIn", size='sm')
+                    ],
+                    href='https://www.linkedin.com/in/manalijain09',
+                    target="_blank"
+                )
+            ],
+                mt="md",
+                mb="xs",
+            ),
+            dmc.Group([
+                html.A(
+                    children=[
+                        DashIconify(icon="ion:logo-github", width=25), 
+                        dmc.Text("GitHub", size='sm')
+                    ],
+                    href='https://github.com/jmanali1996',
+                    target="_blank"
+                )
+            ],
             mt="md",
             mb="xs",
-        ),
-        dmc.Group([
-            html.A(
-                children=[
-                    DashIconify(icon="ion:logo-github", width=25), 
-                    dmc.Text("GitHub", size='sm')
-                ],
-                href='https://github.com/jmanali1996',
-                target="_blank"
-            )
-        ], 
-            align="left",
+            ),
+            dmc.Group([
+                html.A(
+                    children=[
+                        DashIconify(icon="mdi:instagram", width=25), 
+                        dmc.Text("Instagram", size='sm')
+                    ],
+                    href='https://instagram.com/mjain09',
+                    target="_blank"
+                )
+            ],
             mt="md",
             mb="xs",
-        ),
-        dmc.Group([
-            html.A(
-                children=[
-                    DashIconify(icon="mdi:instagram", width=25), 
-                    dmc.Text("Instagram", size='sm')
-                ],
-                href='https://instagram.com/mjain09',
-                target="_blank"
-            )
-        ],
-            align="left",
-            mt="md",
-            mb="xs",
-        ),
+            ),
         ]
     ),
     ],
-    style={"paddingTop": 10, "paddingRight": 20}
+    style={"paddingTop": 10, "paddingRight": 20, "paddingLeft": 20, 'text-align': 'center'}
 )
 
 # RESUME
@@ -96,7 +95,7 @@ resume_div = html.Div([
     html.Iframe(src="https://drive.google.com/file/d/1tafly6mUwfamh_-T_OovhCFQzV1RVo_K/preview",
                 width="1000", height="1200")
     ],
-    style={"paddingTop": 20}
+    style={"paddingTop": 10, "paddingRight": 20, "paddingLeft": 20, 'text-align': 'center'}
 )
 
 # PROJECTS 
@@ -343,7 +342,7 @@ all_pjcards = html.Div(
             ]
         )
     ],
-    style={"paddingTop": 20}
+    style={"paddingTop": 10, "paddingRight": 20, "paddingLeft": 20, 'width': '90%', 'marginLeft': 'auto', 'marginRight': 'auto'}
 )
 
 # CERTIFICATES
@@ -413,7 +412,7 @@ cert_div = html.Div(
     [
         dmc.Table([head, body], verticalSpacing="md", highlightOnHover=True, style={"fontSize": 18})
     ],
-    style={"paddingTop": 30, "paddingRight": 40}
+    style={"paddingTop": 10, "paddingRight": 20, "paddingLeft": 20}
 )
 
 # REFERENCES
@@ -441,27 +440,30 @@ refcard1 = dmc.Card(
                         dmc.Text("Mr. Adam Schroeder", size='xl', style={'color': 'white', 'weight': 500}),
                         dmc.Text(
                             "Founder",
-                            size="sm",
+                            size="md",
                             style={'color': "white"},
                         ),
                         dmc.Text(
                             children=[
                                 html.I("*Tap the logo to visit the website")
                             ],
-                            size="xs",
+                            size="sm",
                             style={'color': "white"}
                         ),
-                        dmc.Button(
-                            dmc.Anchor(
-                                "Recommendation Letter", 
-                                href="https://drive.google.com/file/d/1odmD1v547BzKomPq7wBrhmAQjuvBWQR6/preview",
-                                target="_blank"
-                            ),
-                            color = "gray",
-                            style = {"position": "absolute", "bottom": 20}
-                        )
                     ]),
-                    span=6
+                    span=4
+                ),
+                dmc.GridCol(
+                    dmc.Button(
+                        dmc.Anchor(
+                            "Recommendation Letter", 
+                            href="https://drive.google.com/file/d/1odmD1v547BzKomPq7wBrhmAQjuvBWQR6/preview",
+                            target="_blank"
+                        ),
+                        color = "gray",
+                        style = {"position": "absolute", "bottom": 20}
+                    ),
+                    span=4
                 )
             ]
         )
@@ -495,28 +497,36 @@ refcard2 = dmc.Card(
                     dmc.Stack([
                         dmc.Text("Dr. David Jenkins", size='xl', style={'color': 'white', 'weight': 500}),
                         dmc.Text(
-                            "Lecturer in Health Data Sciences / Examiner No. 2",
-                            size="sm",
+                            "Lecturer in Health Data Sciences",
+                            size="md",
+                            style={'color': "white"},
+                        ),
+                        dmc.Text(
+                            "Examiner No. 2",
+                            size="md",
                             style={'color': "white"},
                         ),
                         dmc.Text(
                             children=[
                                 html.I("*Tap the logo to visit the website")
                             ],
-                            size="xs",
+                            size="sm",
                             style={'color': "white"}
-                        ),
-                        dmc.Button(
-                            dmc.Anchor(
-                                "Dissertation Review", 
-                                href="https://drive.google.com/file/d/1-JSS0bZw5AhBz7097LmVeORylKDizQQM/preview",
-                                target="_blank"
-                            ),
-                            color = "gray",
-                            style = {"position": "absolute", "bottom": 20}
                         )
                     ]),
-                    span=6
+                    span=4
+                ),
+                dmc.GridCol(
+                    dmc.Button(
+                        dmc.Anchor(
+                            "Dissertation Review", 
+                            href="https://drive.google.com/file/d/1-JSS0bZw5AhBz7097LmVeORylKDizQQM/preview",
+                            target="_blank"
+                        ),
+                        color = "gray",
+                        style = {"position": "absolute", "bottom": 20}
+                    ),
+                    span=4
                 )
             ]
         )
@@ -550,7 +560,17 @@ refcard3 = dmc.Card(
                     dmc.Stack([
                         dmc.Text("Dr. Glen Martin", size='xl', style={'color': 'white', 'weight': 500}),
                         dmc.Text(
-                            "Senior Lecturer in Health Data Sciences / Examiner No. 1 / Supervisor",
+                            "Senior Lecturer in Health Data Sciences",
+                            size="sm",
+                            style={'color': "white"},
+                        ),
+                        dmc.Text(
+                            "Examiner No. 1",
+                            size="sm",
+                            style={'color': "white"},
+                        ),
+                        dmc.Text(
+                            "Supervisor",
                             size="sm",
                             style={'color': "white"},
                         ),
@@ -560,18 +580,21 @@ refcard3 = dmc.Card(
                             ],
                             size="xs",
                             style={'color': "white"}
-                        ),
-                        dmc.Button(
-                            dmc.Anchor(
-                                "Dissertation Review", 
-                                href="https://drive.google.com/file/d/1dYuKRtgVVY8FOvKf9cAZznKv5u-ytazD/preview",
-                                target="_blank"
-                            ),
-                            color = "gray",
-                            style = {"position": "absolute", "bottom": 20}
                         )
                     ]),
-                    span=6
+                    span=4
+                ),
+                dmc.GridCol(
+                    dmc.Button(
+                        dmc.Anchor(
+                            "Dissertation Review", 
+                            href="https://drive.google.com/file/d/1dYuKRtgVVY8FOvKf9cAZznKv5u-ytazD/preview",
+                            target="_blank"
+                        ),
+                        color = "gray",
+                        style = {"position": "absolute", "bottom": 20}
+                    ),
+                    span=4
                 )
             ]
         )
@@ -605,29 +628,38 @@ refcard4 = dmc.Card(
                     dmc.Stack([
                         dmc.Text("Dr. Yogesh Karpate", size='xl', style={'color': 'white', 'weight': 500}),
                         dmc.Text(
-                            "Founder / Chief Technology Officer",
-                            size="sm",
+                            "Founder",
+                            size="md",
+                            style={'color': "white"},
+                        ),
+                        dmc.Text(
+                            "Chief Technology Officer",
+                            size="md",
                             style={'color': "white"},
                         ),
                         dmc.Text(
                             children=[
                                 html.I("*Tap the logo to visit the website")
                             ],
-                            size="xs",
+                            size="sm",
                             style={'color': "white"}
-                        ),
-                        dmc.Button(
-                            dmc.Anchor(
-                                "Recommendation Letter", 
-                                href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview",
-                                target="_blank"
-                            ),
-                            color = "gray",
-                            style = {"position": "absolute", "bottom": 20}
                         )
                     ]),
-                    span=6
+                    span=4
+                ),
+                dmc.GridCol(
+                    dmc.Button(
+                        dmc.Anchor(
+                            "Recommendation Letter", 
+                            href="https://drive.google.com/file/d/1buW94xKyB-Dt4S1a9JUWFESDbEnUcrla/preview",
+                            target="_blank"
+                        ),
+                        color = "gray",
+                        style = {"position": "absolute", "bottom": 20}
+                    ),
+                    span=4
                 )
+                    
             ]
         )
     ],
@@ -670,19 +702,23 @@ refcard5 = dmc.Card(
                             ],
                             size="xs",
                             style={'color': "white"}
-                        ),
-                        dmc.Button(
-                            dmc.Anchor(
-                                "Recommendation Letter", 
-                                href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview",
-                                target="_blank"
-                            ),
-                            color = "gray",
-                            style = {"position": "absolute", "bottom": 20}
                         )
                     ]),
-                    span=6
+                    span=4
+                ),
+                dmc.GridCol(
+                    dmc.Button(
+                        dmc.Anchor(
+                            "Recommendation Letter", 
+                            href="https://drive.google.com/file/d/1IS4TX0uwcIlPEa9dkC5Mbs2rqlnYs6sM/preview",
+                            target="_blank"
+                        ),
+                        color = "gray",
+                        style = {"position": "absolute", "bottom": 20}
+                    ),
+                    span=4
                 )
+                    
             ]
         )
     ],
@@ -705,7 +741,7 @@ all_refcards = html.Div(
             ]
         )
     ],
-    style={"paddingTop": 20}
+    style={"paddingTop": 10, "paddingRight": 20, "paddingLeft": 20, 'width': '90%', 'marginLeft': 'auto', 'marginRight': 'auto'}
 )
 
 # LAYOUT
@@ -716,15 +752,16 @@ app.layout = dmc.MantineProvider(
     withGlobalClasses=True,
     children=[
         dmc.Tabs(
-            [
+            children=[
             dmc.TabsList(
-                [
-                    dmc.TabsTab("Get to know me", value="introduction"),
-                    dmc.TabsTab("Resumé", value="resume"),
-                    dmc.TabsTab("Projects", value="projects"),
-                    dmc.TabsTab("Certificates", value="certificates"),
-                    dmc.TabsTab("Testimonials", value="references"),
-                ], style={"paddingRight": 50, "paddingTop": 15}
+                grow=True,
+                children=[
+                    dmc.TabsTab(dmc.Text([(html.B(html.I("Get to know me")))], size="md", style={'color': 'white'}), value="introduction"),
+                    dmc.TabsTab(dmc.Text([(html.B(html.I("Resumé")))], size="md", style={'color': 'white'}), value="resume"),
+                    dmc.TabsTab(dmc.Text([(html.B(html.I("Projects")))], size="md", style={'color': 'white'}), value="projects"),
+                    dmc.TabsTab(dmc.Text([(html.B(html.I("Certificates")))], size="md", style={'color': 'white'}), value="certificates"),
+                    dmc.TabsTab(dmc.Text([(html.B(html.I("Testimonials")))], size="md", style={'color': 'white'}), value="references"),
+                ], style={"paddingTop": 5}
             ),
             dmc.TabsPanel(intro_div, value="introduction", pb="xs"),
             dmc.TabsPanel(resume_div, value="resume", pb="xs"),
@@ -733,8 +770,7 @@ app.layout = dmc.MantineProvider(
             dmc.TabsPanel(children=all_refcards, value="references", pb="xs"),
             ],
         value="introduction",
-        orientation='vertical',
-        variant='pills',
+        color="white"
         )
     ]
 )
