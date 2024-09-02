@@ -6,7 +6,7 @@ click
 dash
 dash-html-components
 dash-iconify
-dash-mantine-components==0.14.0
+dash-mantine-components==0.14.4
 dash-table
 gunicorn
 idna
