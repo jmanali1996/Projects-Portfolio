@@ -596,7 +596,7 @@ tml_carousel = dmc.Carousel(
 )
 
 # LAYOUT
-app = Dash(__name__, external_stylesheets=[dmc.styles.CAROUSEL])
+app = Dash(__name__, suppress_callback_exceptions=True, external_stylesheets=[dmc.styles.CAROUSEL])
 server = app.server
 app.layout = dmc.MantineProvider(
     forceColorScheme="dark",
@@ -604,27 +604,41 @@ app.layout = dmc.MantineProvider(
     children=[
         dmc.Tabs(
             children=[
-            dmc.TabsList(
-                grow=True,
-                children=[
-                    dmc.TabsTab(dmc.Text([(html.B(html.I("Get to know me")))], size="md", style={'color': 'white'}), value="introduction"),
-                    dmc.TabsTab(dmc.Text([(html.B(html.I("Resumé")))], size="md", style={'color': 'white'}), value="resume"),
-                    dmc.TabsTab(dmc.Text([(html.B(html.I("Projects")))], size="md", style={'color': 'white'}), value="projects"),
-                    dmc.TabsTab(dmc.Text([(html.B(html.I("Certificates")))], size="md", style={'color': 'white'}), value="certificates"),
-                    dmc.TabsTab(dmc.Text([(html.B(html.I("Testimonials")))], size="md", style={'color': 'white'}), value="testimonials"),
-                ], style={"paddingTop": 5}
-            ),
-            dmc.TabsPanel(children=intro_div, value="introduction", pb="xs"),
-            dmc.TabsPanel(children=resume_div, value="resume", pb="xs"),
-            dmc.TabsPanel(children=all_pjcards, value="projects", pb="xs"),
-            dmc.TabsPanel(children=cert_div, value="certificates", pb="xs"),
-            dmc.TabsPanel(children=tml_carousel, value="testimonials", pb="xs"),
+                dmc.TabsList(
+                    grow=True,
+                    children=[
+                        dmc.TabsTab(dmc.Text([(html.B(html.I("Get to know me")))], size="md", style={'color': 'white'}), value="introduction"),
+                        dmc.TabsTab(dmc.Text([(html.B(html.I("Resumé")))], size="md", style={'color': 'white'}), value="resume"),
+                        dmc.TabsTab(dmc.Text([(html.B(html.I("Projects")))], size="md", style={'color': 'white'}), value="projects"),
+                        dmc.TabsTab(dmc.Text([(html.B(html.I("Certificates")))], size="md", style={'color': 'white'}), value="certificates"),
+                        dmc.TabsTab(dmc.Text([(html.B(html.I("Testimonials")))], size="md", style={'color': 'white'}), value="testimonials"),
+                    ], style={"paddingTop": 5}
+                )
             ],
-        value="introduction",
-        color="white"
-        )
+            id="tabs",
+            value="introduction",
+            color="white"
+        ),
+        html.Div(id="tabs-content")
     ]
 )
+
+# TABS CALLBACK
+@callback(
+    Output("tabs-content", "children"),
+    Input("tabs", "value")
+)
+def render_content(active):
+    if active == "introduction":
+        return [intro_div]
+    elif active == "resume":
+        return [resume_div]
+    elif active == "projects":
+        return [all_pjcards]
+    elif active == "certificates":
+        return [cert_div]
+    else:
+        return [tml_carousel]
 
 # DOWNLOAD CV CALLBACK
 @callback(
@@ -639,7 +653,7 @@ def download_cv(n_clicks):
 @callback(
     Output("CPRD-drawer", "opened"),
     Input("CPRD-button", "n_clicks"),
-    prevent_initial_call=True,
+    prevent_initial_call=True
 )
 def cprd_drawer(n_clicks):
     return True
@@ -648,7 +662,7 @@ def cprd_drawer(n_clicks):
 @callback(
     Output("BIA-drawer", "opened"),
     Input("BIA-button", "n_clicks"),
-    prevent_initial_call=True,
+    prevent_initial_call=True
 )
 def bia_drawer(n_clicks):
     return True
@@ -657,7 +671,7 @@ def bia_drawer(n_clicks):
 @callback(
     Output("R-drawer", "opened"),
     Input("R-button", "n_clicks"),
-    prevent_initial_call=True,
+    prevent_initial_call=True
 )
 def r_drawer(n_clicks):
     return True
