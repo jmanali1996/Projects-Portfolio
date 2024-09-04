@@ -497,18 +497,29 @@ pjcard5 = dmc.Card(
 
 all_pjcards = html.Div(
     [
-        dmc.Grid(
-            gutter="sm",
-            children=[
-                dmc.GridCol(html.Div(pjcard1), span=4),
-                dmc.GridCol(html.Div(pjcard2), span=4),
-                dmc.GridCol(html.Div(pjcard3), span=4),
-                dmc.GridCol(html.Div(pjcard4), span=4),
-                dmc.GridCol(html.Div(pjcard5), span=4)
-            ]
+        dmc.Flex(
+            [
+                html.Div(pjcard1),
+                html.Div(pjcard2),
+                html.Div(pjcard3)
+            ],
+            direction={"base": "column", "sm": "row"},
+            gap={"base": "sm", "sm": "lg"},
+            justify={"sm": "center"},
+            style={"paddingBottom": 10}
+        ),
+        dmc.Flex(
+            [
+                html.Div(pjcard4),
+                html.Div(pjcard5)
+            ],
+            direction={"base": "column", "sm": "row"},
+            gap={"base": "sm", "sm": "lg"},
+            justify={"sm": "center"},
+            style={"paddingBottom": 10}
         )
     ],
-    style={"paddingTop": 10, "paddingRight": 20, "paddingLeft": 20, 'width': '90%', 'marginLeft': 'auto', 'marginRight': 'auto'}
+    style={"paddingTop": 10, "paddingRight": 20, "paddingLeft": 20}
 )
 
 # CERTIFICATES
@@ -530,7 +541,7 @@ row1 = dmc.TableTr([
     dmc.TableTd([
         dmc.Button("View", id = "CPRD-button", variant="filled", style={"backgroundColor": "white", "color": "black"}),
         dmc.Drawer(
-            html.Iframe(src="https://drive.google.com/file/d/1N2x9ZjaFxlx1HJsCBGw6R3hfBfW3-Fas/preview", style={'height': '450px', 'width': '1400px'}),
+            html.Iframe(src="https://drive.google.com/file/d/1N2x9ZjaFxlx1HJsCBGw6R3hfBfW3-Fas/preview", style={'height': '450px', 'width': '100%', 'max-width': '1400px'}),
             id = "CPRD-drawer",
             padding = "md",
             size = "70%",
@@ -546,7 +557,7 @@ row2 = dmc.TableTr([
     dmc.TableTd([
         dmc.Button("View", id = "BIA-button", variant="filled", style={"backgroundColor": "white", "color": "black"}),
         dmc.Drawer(
-            html.Iframe(src="https://drive.google.com/file/d/1c5m_jOSt5l-Mou1GAme4D4BbunrhflhJ/preview", style={'height': '450px', 'width': '1400px'}),
+            html.Iframe(src="https://drive.google.com/file/d/1c5m_jOSt5l-Mou1GAme4D4BbunrhflhJ/preview", style={'height': '450px', 'width': '100%', 'max-width': '1400px'}),
             id = "BIA-drawer",
             padding = "md",
             size = "70%",
@@ -562,7 +573,7 @@ row3 = dmc.TableTr([
     dmc.TableTd([
         dmc.Button("View", id = "R-button", variant="filled", style={"backgroundColor": "white", "color": "black"}),
         dmc.Drawer(
-            html.Iframe(src="https://drive.google.com/file/d/1Xs14mvQaM9pLYoNlmOHiRQ0Ecy9lu9PN/preview", style={'height': '450px', 'width': '1400px'}),
+            html.Iframe(src="https://drive.google.com/file/d/1Xs14mvQaM9pLYoNlmOHiRQ0Ecy9lu9PN/preview", style={'height': '450px', 'width': '100%', 'max-width': '1400px'}),
             id = "R-drawer",
             padding = "md",
             size = "70%",
