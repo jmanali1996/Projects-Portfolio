@@ -535,6 +535,22 @@ head = dmc.TableThead(
 )
 
 row1 = dmc.TableTr([
+    dmc.TableTd("Data Science using Gen AI and Python"),
+    dmc.TableTd("Scaler"),
+    dmc.TableTd("2024"),
+    dmc.TableTd([
+        dmc.Button("View", id = "GenAI-button", variant="filled", style={"backgroundColor": "white", "color": "black"}),
+        dmc.Drawer(
+            html.Iframe(src="https://drive.google.com/file/d/1GsU1rtCAGo1F1hX1uY6BCxAt-vPOz8JL/preview", style={'height': '450px', 'width': '100%', 'max-width': '1400px'}),
+            id = "GenAI-drawer",
+            padding = "md",
+            size = "70%",
+            position = "bottom",
+            zIndex = 10000,
+        )    
+    ])
+])
+row2 = dmc.TableTr([
     dmc.TableTd("CPRD resource module training test"),
     dmc.TableTd("Clinical Practice Research Datalink (CPRD)"),
     dmc.TableTd("2023"),
@@ -550,7 +566,7 @@ row1 = dmc.TableTr([
         )    
     ])
 ])
-row2 = dmc.TableTr([
+row3 = dmc.TableTr([
     dmc.TableTd("Data Science & Business Analytics Core Module"),
     dmc.TableTd("Boston Institute of Analytics (BIA)"),
     dmc.TableTd("2019"),
@@ -566,7 +582,7 @@ row2 = dmc.TableTr([
         )    
     ])
 ])
-row3 = dmc.TableTr([
+row4 = dmc.TableTr([
     dmc.TableTd("PH125.1x: Data Science: R Basics"),
     dmc.TableTd("HarvardX"),
     dmc.TableTd("2019"),
@@ -583,7 +599,7 @@ row3 = dmc.TableTr([
     ])
 ])
 
-body = dmc.TableTbody([row1, row2, row3]) 
+body = dmc.TableTbody([row1, row2, row3, row4]) 
 
 cert_div = html.Div(
     [
@@ -659,6 +675,15 @@ def render_content(active):
 )
 def download_cv(n_clicks):
     return dcc.send_file("assets/Manali_Jain_CV.pdf")
+
+# GENAI DRAWER CALLBACK
+@callback(
+    Output("GenAI-drawer", "opened"),
+    Input("GenAI-button", "n_clicks"),
+    prevent_initial_call=True
+)
+def genai_drawer(n_clicks):
+    return True
 
 # CPRD DRAWER CALLBACK
 @callback(
