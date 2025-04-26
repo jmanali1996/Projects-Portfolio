@@ -114,12 +114,42 @@ resume_div = html.Div([
         style={'color': 'white'}
     ),
     dmc.Text(
+        children=[html.B("Cochrane Member (Health Data Analyst) at Cochrane, Global")],
+        size="md",
+        style={'color': 'white'}
+    ),
+    dmc.Text(
+        children=[html.I("October 2024 - Present")],
+        size="sm",
+        style={'color': 'white'}
+    ),
+    dmc.Text(
+        "● Screened over 2,000 research records via Cochrane Crowd, supporting the identification of relevant studies for systematic reviews.",
+        size="sm",
+        style={'color': 'white'}        
+    ),
+    dmc.Text(
+        "● Created a blogshot for Cochrane MS and Rare Diseases of the CNS, simplifying complex evidence into accessible summaries for broader audiences.",
+        size="sm",
+        style={'color': 'white'}        
+    ),
+    dmc.Text(
+        "● Assisted in the early-stage screening and classification of randomized controlled trials (RCTs) to strengthen evidence synthesis.",
+        size="sm",
+        style={'color': 'white'}        
+    ),
+    dmc.Text(
+        "● Contributed to global efforts in improving healthcare decision-making by promoting the dissemination of reliable, evidence-based information.",
+        size="sm",
+        style={'color': 'white'}        
+    ),
+    dmc.Text(
         children=[html.B("Community Moderator (Data Analyst) at Charming Data Community, Global")],
         size="md",
         style={'color': 'white'}
     ),
     dmc.Text(
-        children=[html.I("January 2024 — Present")],
+        children=[html.I("January 2024 — September 2024")],
         size="sm",
         style={'color': 'white'}
     ),
