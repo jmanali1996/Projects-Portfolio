@@ -119,6 +119,37 @@ resume_div = html.Div([
                 [
                     dmc.AccordionControl(
                         dmc.Text(
+                            children=[html.B("Clinical Data Analyst: "), html.A("Umbizo, Manchester, England, UK", href="https://www.umbizo.co.uk/", target="_blank"), html.I(" (July 2025 - Present)")],
+                            size="md",
+                            style={'color': 'white'}
+                        )
+                    ),
+                    dmc.AccordionPanel(
+                        [
+                            dmc.Text(
+                                "> Completed project-based assessment to demonstrate ability to understand and execute clinical data analysis tasks effectively and efficiently.",
+                                size="sm",
+                                style={'color': 'white'}        
+                            ),
+                            dmc.Text(
+                                "> Applied core bioinformatics and data analysis skills on real-world datasets, showcasing aptitude for species identification research and data interpretation.",
+                                size="sm",
+                                style={'color': 'white'}        
+                            ),
+                            dmc.Text(
+                                "> Gained exposure to clinical data workflows and contributed to project deliverables aligned with organizational expectations.",
+                                size="sm",
+                                style={'color': 'white'}        
+                            ),
+                        ]
+                    )
+                ],
+                value="umbizo"
+            ),
+            dmc.AccordionItem(
+                [
+                    dmc.AccordionControl(
+                        dmc.Text(
                             children=[html.B("Cochrane Member (Health Data Analyst): "), html.A("Cochrane, Global", href="https://www.cochrane.org/", target="_blank"), html.I(" (October 2024 - Present)")],
                             size="md",
                             style={'color': 'white'}
@@ -290,40 +321,57 @@ resume_div = html.Div([
         size="xl",
         style={'color': 'white'}
     ),
-    dmc.Text(
-        children=[html.B("MSc Health Data Science, The University of Manchester, Manchester, England, UK")],
-        size="md",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        children=[html.I("December 2023")],
+    dmc.List(
+        spacing="md",
         size="sm",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        "Thesis topic: Multi-state multimorbidity prediction model",
-        size="sm",
-        style={'color': 'white'}        
-    ),
-    dmc.Text(
-        "Supervisors: Dr Alexander Pate and Dr Glen P Martin",
-        size="sm",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        "The study focused on developing and validating a multi-state model to predict multimorbidity of cardiovascular disease, type 2 diabetes, and chronic kidney diseases.",
-        size="sm",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        children=[html.B("BA Psychology, Mithibai College of Arts, Mumbai University, Mumbai, Maharashtra, India")],
-        size="md",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        children=[html.I("March 2018")],
-        size="sm",
-        style={'color': 'white'}
+        center=False,
+        icon=DashIconify(icon="mdi:school", width=24, color="white"),
+        children=[
+            dmc.ListItem(
+                [
+                    dmc.Text(
+                        children=[html.B("MSc Health Data Science, The University of Manchester, Manchester, England, UK")],
+                        size="md",
+                        style={'color': 'white'}
+                    ),
+                    dmc.Text(
+                        children=[html.I("December 2023")],
+                        size="sm",
+                        style={'color': 'white'}
+                    ),
+                    dmc.Text(
+                        "Thesis topic: Multi-state multimorbidity prediction model",
+                        size="sm",
+                        style={'color': 'white'}        
+                    ),
+                    dmc.Text(
+                        "Supervisors: Dr Alexander Pate and Dr Glen P Martin",
+                        size="sm",
+                        style={'color': 'white'}
+                    ),
+                    dmc.Text(
+                        "The study focused on developing and validating a multi-state model to predict multimorbidity of cardiovascular disease, type 2 diabetes, and chronic kidney diseases.",
+                        size="sm",
+                        style={'color': 'white'}
+                    ),
+                ]
+            ),
+            dmc.ListItem(
+                [
+                    dmc.Text(
+                        children=[html.B("BA Psychology, Mithibai College of Arts, Mumbai University, Mumbai, Maharashtra, India")],
+                        size="md",
+                        style={'color': 'white'}
+                    ),
+                    dmc.Text(
+                        children=[html.I("March 2018")],
+                        size="sm",
+                        style={'color': 'white'}
+                    ),
+                ]
+            ),
+        ],
+        style={'marginBottom': 20}
     ),
     ],
     style={"paddingTop": 10, "paddingRight": 20, "paddingLeft": 20}
