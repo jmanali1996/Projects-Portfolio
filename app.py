@@ -106,149 +106,184 @@ resume_div = html.Div([
     dmc.Text(
         children=[html.B("Data Analysis - Data Management - Data Visualization - Machine Learning and AI - Microsoft Office - Microsoft Power BI - Tableau - R programming - Python - SQL")],
         size="md",
-        style={'color': 'white'}
+        style={'color': 'white', 'marginBottom': 20}
     ),
     dmc.Text(
         children=[html.U(html.B("Work experience"))],
         size="xl",
         style={'color': 'white'}
     ),
-    dmc.Text(
-        children=[html.B("Cochrane Member (Health Data Analyst) at Cochrane, Global")],
-        size="md",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        children=[html.I("October 2024 - Present")],
-        size="sm",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        "● Screened over 2,000 research records via Cochrane Crowd, supporting the identification of relevant studies for systematic reviews.",
-        size="sm",
-        style={'color': 'white'}        
-    ),
-    dmc.Text(
-        "● Created a blogshot for Cochrane MS and Rare Diseases of the CNS, simplifying complex evidence into accessible summaries for broader audiences.",
-        size="sm",
-        style={'color': 'white'}        
-    ),
-    dmc.Text(
-        "● Assisted in the early-stage screening and classification of randomized controlled trials (RCTs) to strengthen evidence synthesis.",
-        size="sm",
-        style={'color': 'white'}        
-    ),
-    dmc.Text(
-        "● Contributed to global efforts in improving healthcare decision-making by promoting the dissemination of reliable, evidence-based information.",
-        size="sm",
-        style={'color': 'white'}        
-    ),
-    dmc.Text(
-        children=[html.B("Community Moderator (Data Analyst) at Charming Data Community, Global")],
-        size="md",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        children=[html.I("January 2024 — September 2024")],
-        size="sm",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        "● Orchestrated discussions and resolved over 500 inquiries related to data analysis methodologies, fostering a dynamic exchange of insights within the community.",
-        size="sm",
-        style={'color': 'white'}        
-    ),
-    dmc.Text(
-        "● Enforced community guidelines resulting in a 20% reduction in spam and irrelevant content, ensuring a more focused and constructive environment.",
-        size="sm",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        "● Analyzed user feedback and data trends, leading to the implementation of three new features that improved user engagement by 30%.",
-        size="sm",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        "● Acted as a conduit between community members and the data analysis team, resulting in the integration of five user-requested features "
-        "into product updates, enhancing user satisfaction and retention.",
-        size="sm",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        children=[html.B("Disability Student Researcher at The University of Manchester Student's Union, Manchester, England, UK")],
-        size="md",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        children=[html.I("April 2023 — June 2023")],
-        size="sm",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        "● Analyzed data from surveys of students to identify problems and prospects for disabled students.",
-        size="sm",
-        style={'color': 'white'}        
-    ),
-    dmc.Text(
-        "● Presented the obtained research results in a report at a big conference.",
-        size="sm",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        children=[html.B("Data Engineer at Chistats Labs Pvt. Ltd., Pune, Maharashtra, India")],
-        size="md",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        children=[html.I("August 2020 — July 2022")],
-        size="sm",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        "● Guided projects to completion on time: approximately 25% more projects were completed on time.",
-        size="sm",
-        style={'color': 'white'}        
-    ),
-    dmc.Text(
-        "● Launched machine learning models on production: machine learning models helped processes to be completed approximately 30% faster.",
-        size="sm",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        "● Reported the project status and all the changes to the team: prevented the waste of time by approximately 20% regarding meeting deadlines.",
-        size="sm",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        "● Completed the selection of relevant information: used a large amount of data for operations: satisfied the client’s demands by providing them"
-        "with what they asked for in a timely manner.",
-        size="sm",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        children=[html.B("Business Data Analyst at Hot Stuffs Pvt. Ltd., Mumbai, Maharashtra, India")],
-        size="md",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        children=[html.I("November 2019 — July 2020")],
-        size="sm",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        "● Made visualizations and dashboards for a more data-based decision-making approach through analyzing key metrics and trends.",
-        size="sm",
-        style={'color': 'white'}        
-    ),
-    dmc.Text(
-        "● Held training sessions for other business users to focus efforts on decisions based on data, which resulted in 15% of such actions.",
-        size="sm",
-        style={'color': 'white'}
-    ),
-    dmc.Text(
-        "● Practiced the management of social media accounts and reached a 10% increase in comments and shares of material, with weekly statistics.",
-        size="sm",
-        style={'color': 'white'}
+    dmc.Accordion(
+        children=[
+            dmc.AccordionItem(
+                [
+                    dmc.AccordionControl(
+                        dmc.Text(
+                            children=[html.B("Cochrane Member (Health Data Analyst): "), html.A("Cochrane, Global", href="https://www.cochrane.org/", target="_blank"), html.I(" (October 2024 - Present)")],
+                            size="md",
+                            style={'color': 'white'}
+                        )
+                    ),
+                    dmc.AccordionPanel(
+                        [
+                            dmc.Text(
+                                "> Screened over 2,000 research records via Cochrane Crowd, supporting the identification of relevant studies for systematic reviews.",
+                                size="sm",
+                                style={'color': 'white'}        
+                            ),
+                            dmc.Text(
+                                "> Created a blogshot for Cochrane MS and Rare Diseases of the CNS, simplifying complex evidence into accessible summaries for broader audiences.",
+                                size="sm",
+                                style={'color': 'white'}        
+                            ),
+                            dmc.Text(
+                                "> Assisted in the early-stage screening and classification of randomized controlled trials (RCTs) to strengthen evidence synthesis.",
+                                size="sm",
+                                style={'color': 'white'}        
+                            ),
+                            dmc.Text(
+                                "> Contributed to global efforts in improving healthcare decision-making by promoting the dissemination of reliable, evidence-based information.",
+                                size="sm",
+                                style={'color': 'white'}        
+                            ),
+                        ]
+                    )
+                ],
+                value="cochrane"
+            ),
+            dmc.AccordionItem(
+                [
+                    dmc.AccordionControl(
+                        dmc.Text(
+                            children=[html.B("Community Moderator (Data Analyst): "), html.A("Charming Data Community, Global", href="https://charming-data.circle.so/", target="_blank"), html.I(" (January 2024 — September 2024)")],
+                            size="md",
+                            style={'color': 'white'}
+                        )
+                    ),
+                    dmc.AccordionPanel(
+                        [
+                            dmc.Text(
+                                "> Orchestrated discussions and resolved over 500 inquiries related to data analysis methodologies, fostering a dynamic exchange of insights within the community.",
+                                size="sm",
+                                style={'color': 'white'}        
+                            ),
+                            dmc.Text(
+                                "> Enforced community guidelines resulting in a 20% reduction in spam and irrelevant content, ensuring a more focused and constructive environment.",
+                                size="sm",
+                                style={'color': 'white'}
+                            ),
+                            dmc.Text(
+                                "> Analyzed user feedback and data trends, leading to the implementation of three new features that improved user engagement by 30%.",
+                                size="sm",
+                                style={'color': 'white'}
+                            ),
+                            dmc.Text(
+                                "> Acted as a conduit between community members and the data analysis team, resulting in the integration of five user-requested features into product updates, enhancing user satisfaction and retention.",
+                                size="sm",
+                                style={'color': 'white'}
+                            ),
+                        ]
+                    )
+                ],
+                value="charmingdata"
+            ),
+            dmc.AccordionItem(
+                [
+                    dmc.AccordionControl(
+                        dmc.Text(
+                            children=[html.B("Disability Student Researcher: "), html.A("The University of Manchester Student's Union, Manchester, England, UK", href="https://manchesterstudentsunion.com/", target="_blank"), html.I(" (April 2023 — June 2023)")],
+                            size="md",
+                            style={'color': 'white'}
+                        )
+                    ),
+                    dmc.AccordionPanel(
+                        [
+                            dmc.Text(
+                                "> Analyzed data from surveys of students to identify problems and prospects for disabled students.",
+                                size="sm",
+                                style={'color': 'white'}        
+                            ),
+                            dmc.Text(
+                                "> Presented the obtained research results in a report at a big conference.",
+                                size="sm",
+                                style={'color': 'white'}
+                            ),
+                        ]
+                    )
+                ],
+                value="manchester"
+            ),
+            dmc.AccordionItem(
+                [
+                    dmc.AccordionControl(
+                        dmc.Text(
+                            children=[html.B("Data Engineer: "), html.A("Chistats Labs Pvt. Ltd., Pune, Maharashtra, India", href="https://chistats.ai/", target="_blank"), html.I(" (August 2020 — July 2022)")],
+                            size="md",
+                            style={'color': 'white'}
+                        )
+                    ),
+                    dmc.AccordionPanel(
+                        [
+                            dmc.Text(
+                                "> Guided projects to completion on time: approximately 25% more projects were completed on time.",
+                                size="sm",
+                                style={'color': 'white'}        
+                            ),
+                            dmc.Text(
+                                "> Launched machine learning models on production: machine learning models helped processes to be completed approximately 30% faster.",
+                                size="sm",
+                                style={'color': 'white'}
+                            ),
+                            dmc.Text(
+                                "> Reported the project status and all the changes to the team: prevented the waste of time by approximately 20% regarding meeting deadlines.",
+                                size="sm",
+                                style={'color': 'white'}
+                            ),
+                            dmc.Text(
+                                "> Completed the selection of relevant information: used a large amount of data for operations: satisfied the client’s demands by providing them with what they asked for in a timely manner.",
+                                size="sm",
+                                style={'color': 'white'}
+                            ),
+                        ]
+                    )
+                ],
+                value="chistats"
+            ),
+            dmc.AccordionItem(
+                [
+                    dmc.AccordionControl(
+                        dmc.Text(
+                            children=[html.B("Business Data Analyst: "), html.A("Hot Stuffs Pvt. Ltd., Mumbai, Maharashtra, India", href="https://hotmuggs.com/", target="_blank"), html.I(" (November 2019 — July 2020)")],
+                            size="md",
+                            style={'color': 'white'}
+                        )
+                    ),
+                    dmc.AccordionPanel(
+                        [
+                            dmc.Text(
+                                "> Made visualizations and dashboards for a more data-based decision-making approach through analyzing key metrics and trends.",
+                                size="sm",
+                                style={'color': 'white'}        
+                            ),
+                            dmc.Text(
+                                "> Held training sessions for other business users to focus efforts on decisions based on data, which resulted in 15% of such actions.",
+                                size="sm",
+                                style={'color': 'white'}
+                            ),
+                            dmc.Text(
+                                "> Practiced the management of social media accounts and reached a 10% increase in comments and shares of material, with weekly statistics.",
+                                size="sm",
+                                style={'color': 'white'}
+                            ),
+                        ]
+                    )
+                ],
+                value="hotstuffs"
+            ),
+        ],
+        variant="contained",
+        radius="md",
+        style={"marginBottom": 20}
     ),
     dmc.Text(
         children=[html.U(html.B("Education"))],
