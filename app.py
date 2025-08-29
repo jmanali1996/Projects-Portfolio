@@ -119,7 +119,7 @@ resume_div = html.Div([
                 [
                     dmc.AccordionControl(
                         dmc.Text(
-                            children=[html.B("Clinical Data Analyst: "), html.A("Umbizo, Manchester, England, UK", href="https://www.umbizo.co.uk/", target="_blank"), html.I(" (July 2025 - Present)")],
+                            children=[html.B("Clinical Data Analyst: "), html.A("Umbizo, Manchester, England, UK", href="https://www.umbizo.co.uk/", target="_blank"), html.I(" (July 2025 — Present)")],
                             size="md",
                             style={'color': 'white'}
                         )
@@ -150,7 +150,7 @@ resume_div = html.Div([
                 [
                     dmc.AccordionControl(
                         dmc.Text(
-                            children=[html.B("Cochrane Member (Health Data Analyst): "), html.A("Cochrane, Global", href="https://www.cochrane.org/", target="_blank"), html.I(" (October 2024 - Present)")],
+                            children=[html.B("Cochrane Member (Health Data Analyst): "), html.A("Cochrane, Global", href="https://www.cochrane.org/", target="_blank"), html.I(" (October 2024 — Present)")],
                             size="md",
                             style={'color': 'white'}
                         )
