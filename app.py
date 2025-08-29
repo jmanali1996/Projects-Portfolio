@@ -158,22 +158,22 @@ resume_div = html.Div([
                     dmc.AccordionPanel(
                         [
                             dmc.Text(
-                                "> Screened over 2,000 research records via Cochrane Crowd, supporting the identification of relevant studies for systematic reviews.",
+                                "> Led screening of over 2,000 research records, improving systematic review processes.",
                                 size="sm",
                                 style={'color': 'white'}        
                             ),
                             dmc.Text(
-                                "> Created a blogshot for Cochrane MS and Rare Diseases of the CNS, simplifying complex evidence into accessible summaries for broader audiences.",
+                                "> Developed blogshots translating complex medical research into accessible summaries for wider audiences.",
                                 size="sm",
                                 style={'color': 'white'}        
                             ),
                             dmc.Text(
-                                "> Assisted in the early-stage screening and classification of randomized controlled trials (RCTs) to strengthen evidence synthesis.",
+                                "> Assisted in early-stage classification of randomized controlled trials, enhancing evidence synthesis quality.",
                                 size="sm",
                                 style={'color': 'white'}        
                             ),
                             dmc.Text(
-                                "> Contributed to global efforts in improving healthcare decision-making by promoting the dissemination of reliable, evidence-based information.",
+                                "> Contributed to global initiatives fostering reliable, evidence-based healthcare decision-making.",
                                 size="sm",
                                 style={'color': 'white'}        
                             ),
@@ -194,22 +194,22 @@ resume_div = html.Div([
                     dmc.AccordionPanel(
                         [
                             dmc.Text(
-                                "> Orchestrated discussions and resolved over 500 inquiries related to data analysis methodologies, fostering a dynamic exchange of insights within the community.",
+                                "> Managed and resolved 500+ data analysis inquiries, fostering knowledge exchange.",
                                 size="sm",
                                 style={'color': 'white'}        
                             ),
                             dmc.Text(
-                                "> Enforced community guidelines resulting in a 20% reduction in spam and irrelevant content, ensuring a more focused and constructive environment.",
+                                "> Enforced community guidelines, reducing spam and irrelevant content by 20%.",
                                 size="sm",
                                 style={'color': 'white'}
                             ),
                             dmc.Text(
-                                "> Analyzed user feedback and data trends, leading to the implementation of three new features that improved user engagement by 30%.",
+                                "> Analyzed user data to implement 3 new engagement features, increasing activity by 30%.",
                                 size="sm",
                                 style={'color': 'white'}
                             ),
                             dmc.Text(
-                                "> Acted as a conduit between community members and the data analysis team, resulting in the integration of five user-requested features into product updates, enhancing user satisfaction and retention.",
+                                "> Facilitated communication between users and data teams, integrating 5 requested features.",
                                 size="sm",
                                 style={'color': 'white'}
                             ),
@@ -230,12 +230,12 @@ resume_div = html.Div([
                     dmc.AccordionPanel(
                         [
                             dmc.Text(
-                                "> Analyzed data from surveys of students to identify problems and prospects for disabled students.",
+                                "> Analyzed survey data to identify challenges for disabled students.",
                                 size="sm",
                                 style={'color': 'white'}        
                             ),
                             dmc.Text(
-                                "> Presented the obtained research results in a report at a big conference.",
+                                "> Presented research findings at a major university conference.",
                                 size="sm",
                                 style={'color': 'white'}
                             ),
@@ -256,22 +256,22 @@ resume_div = html.Div([
                     dmc.AccordionPanel(
                         [
                             dmc.Text(
-                                "> Guided projects to completion on time: approximately 25% more projects were completed on time.",
+                                "> Led machine learning model deployments, improving process efficiency by 30%.",
                                 size="sm",
                                 style={'color': 'white'}        
                             ),
                             dmc.Text(
-                                "> Launched machine learning models on production: machine learning models helped processes to be completed approximately 30% faster.",
+                                "> Enhanced project completion rates by approximately 25% through improved workflows.",
                                 size="sm",
                                 style={'color': 'white'}
                             ),
                             dmc.Text(
-                                "> Reported the project status and all the changes to the team: prevented the waste of time by approximately 20% regarding meeting deadlines.",
+                                "> Provided timely project updates, reducing deadline risks by 20%.",
                                 size="sm",
                                 style={'color': 'white'}
                             ),
                             dmc.Text(
-                                "> Completed the selection of relevant information: used a large amount of data for operations: satisfied the client’s demands by providing them with what they asked for in a timely manner.",
+                                "> Ensured data selection met client specifications for diverse operational needs.",
                                 size="sm",
                                 style={'color': 'white'}
                             ),
@@ -292,17 +292,17 @@ resume_div = html.Div([
                     dmc.AccordionPanel(
                         [
                             dmc.Text(
-                                "> Made visualizations and dashboards for a more data-based decision-making approach through analyzing key metrics and trends.",
+                                "> Designed visual dashboards to support data-driven decision-making.",
                                 size="sm",
                                 style={'color': 'white'}        
                             ),
                             dmc.Text(
-                                "> Held training sessions for other business users to focus efforts on decisions based on data, which resulted in 15% of such actions.",
+                                "> Conducted training for business users, enhancing data-informed actions by 15%.",
                                 size="sm",
                                 style={'color': 'white'}
                             ),
                             dmc.Text(
-                                "> Practiced the management of social media accounts and reached a 10% increase in comments and shares of material, with weekly statistics.",
+                                "> Managed social media accounts, increasing engagement by 10%.",
                                 size="sm",
                                 style={'color': 'white'}
                             ),
