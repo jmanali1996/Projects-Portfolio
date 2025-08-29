@@ -330,7 +330,7 @@ resume_div = html.Div([
             dmc.ListItem(
                 [
                     dmc.Text(
-                        children=[html.B("MSc Health Data Science, The University of Manchester, Manchester, England, UK")],
+                        children=[html.B("MSc Health Data Science — The University of Manchester, Manchester, England, UK")],
                         size="md",
                         style={'color': 'white'}
                     ),
@@ -340,7 +340,7 @@ resume_div = html.Div([
                         style={'color': 'white'}
                     ),
                     dmc.Text(
-                        "Thesis topic: Multi-state multimorbidity prediction model",
+                        "Thesis topic: Multi-state multimorbidity prediction model, focused on cardiovascular disease, type 2 diabetes, and chronic kidney diseases.",
                         size="sm",
                         style={'color': 'white'}        
                     ),
@@ -349,17 +349,12 @@ resume_div = html.Div([
                         size="sm",
                         style={'color': 'white'}
                     ),
-                    dmc.Text(
-                        "The study focused on developing and validating a multi-state model to predict multimorbidity of cardiovascular disease, type 2 diabetes, and chronic kidney diseases.",
-                        size="sm",
-                        style={'color': 'white'}
-                    ),
                 ]
             ),
             dmc.ListItem(
                 [
                     dmc.Text(
-                        children=[html.B("BA Psychology, Mithibai College of Arts, Mumbai University, Mumbai, Maharashtra, India")],
+                        children=[html.B("BA Psychology — Mithibai College of Arts, Mumbai University, Mumbai, Maharashtra, India")],
                         size="md",
                         style={'color': 'white'}
                     ),
