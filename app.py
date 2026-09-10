@@ -378,6 +378,52 @@ pjcard1 = dmc.Card(
         dmc.CardSection(
             dmc.Anchor(
                 dmc.Image(
+                    src="https://i.postimg.cc/LXx5TZ7c/sl.png",
+                    alt="Sequence Lab",
+                    style={'height': '250px', 'width': '100%', 'max-width': '400px'}
+                ),
+                href="https://drive.google.com/file/d/1jujriJLOdkg59CjC99fGMaas25I7LlyH/preview",
+                target="_blank"
+            ),
+        ),
+        dmc.Group(
+            [
+                dmc.Text("Sequence Lab", size='xl', style={'color': 'white', 'weight': 500}),
+                html.A(
+                    DashIconify(icon="ion:logo-github", width=30),
+                    href='https://github.com/jmanali1996/Sequence-Lab.git',
+                    target="_blank"
+                )
+            ],
+            justify="space-between",
+            mt="md",
+            mb="xs",
+        ),
+        dmc.Text(
+            "An interactive web application for exploring and analysing DNA sequence data using Python. It was developed as a hands-on way to move "
+            "beyond solving individual bioinformatics problems and apply those concepts to a complete, interactive data-analysis workflow.",
+            size="sm",
+            style={'color': 'white'}
+        ),
+        dmc.Text(
+            children=[
+                html.I("*Tap the image to view the walkthrough video")
+            ],
+            size="xs",
+            style={'color': "white", "paddingTop": 5}
+        )
+    ],
+    withBorder=True,
+    shadow="sm",
+    radius="md",
+    style={'width': '100%', 'max-width': '400px'}
+)
+
+pjcard2 = dmc.Card(
+    children=[
+        dmc.CardSection(
+            dmc.Anchor(
+                dmc.Image(
                     src="https://i.postimg.cc/gJ73Mfcw/Stop-war.png",
                     alt="Civilian Conflicts",
                     style={'height': '250px', 'width': '100%', 'max-width': '400px'}
@@ -419,7 +465,7 @@ pjcard1 = dmc.Card(
     style={'width': '100%', 'max-width': '400px'}
 )
 
-pjcard2 = dmc.Card(
+pjcard3 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Anchor(
@@ -465,7 +511,7 @@ pjcard2 = dmc.Card(
     style={'width': '100%', 'max-width': '400px'}
 )
 
-pjcard3 = dmc.Card(
+pjcard4 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Anchor(
@@ -511,7 +557,7 @@ pjcard3 = dmc.Card(
     style={'width': '100%', 'max-width': '400px'}
 )
 
-pjcard4 = dmc.Card(
+pjcard5 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Anchor(
@@ -557,7 +603,7 @@ pjcard4 = dmc.Card(
     style={'width': '100%', 'max-width': '400px'}
 )
 
-pjcard5 = dmc.Card(
+pjcard6 = dmc.Card(
     children=[
         dmc.CardSection(
             dmc.Anchor(
@@ -619,7 +665,8 @@ all_pjcards = html.Div(
         dmc.Flex(
             [
                 html.Div(pjcard4),
-                html.Div(pjcard5)
+                html.Div(pjcard5),
+                html.Div(pjcard6)
             ],
             direction={"base": "column", "sm": "row"},
             gap={"base": "sm", "sm": "lg"},
