@@ -400,8 +400,8 @@ pjcard1 = dmc.Card(
             mb="xs",
         ),
         dmc.Text(
-            "An interactive web application for exploring and analysing DNA sequence data using Python. It was developed as a hands-on way to move "
-            "beyond solving individual bioinformatics problems and apply those concepts to a complete, interactive data-analysis workflow.",
+            "An interactive platform for biological sequence analysis and exploration, continuously evolving with new bioinformatics "
+            "concepts, algorithms, and analytical techniques.",
             size="sm",
             style={'color': 'white'}
         ),
